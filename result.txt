@@ -1,0 +1,13 @@
+Rekomendowane trasy:
+
+Szlak 47 - Kępa Redłowska (4.7 km, poziom trudności: 2)
+  - Region: Gdynia
+  - Średnia temperatura: 20.34°C
+  - Opady: 28.9 mm
+  - Słoneczne dni: powyżej 4.0h słońca w conajmniej 7 dniach
+
+Szlak 99 - Kępa Redłowska (5.1 km, poziom trudności: 2)
+  - Region: Gdynia
+  - Średnia temperatura: 22.07°C
+  - Opady: 41.2 mm
+  - Słoneczne dni: powyżej 4.0h słońca w conajmniej 7 dniach
