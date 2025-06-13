@@ -1,0 +1,3 @@
+Raport przyjazdów i wyjazdów dla daty: 2025-01-01
+Liczba przyjazdów: 0
+Liczba wyjazdów: 0

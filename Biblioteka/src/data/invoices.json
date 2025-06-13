@@ -1,0 +1,18 @@
+[
+    {
+        "invoice_id": "INV0001",
+        "reservation_id": "RES0001",
+        "guest_id": "1",
+        "issue_date": "2025-06-06",
+        "due_date": "2025-06-13",
+        "total_amount": 2340.0,
+        "paid_amount": 2600.0,
+        "status": "paid",
+        "line_items": [
+            {
+                "description": "Op\u0142ata za pok\u00f3j (Pok\u00f3j 1, 2024-05-05 do 2024-05-10)",
+                "amount": 1170.0
+            }
+        ]
+    }
+]

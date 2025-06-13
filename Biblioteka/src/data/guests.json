@@ -1,0 +1,68 @@
+[
+    {
+        "guest_id": "1",
+        "first_name": "Kamil",
+        "last_name": "Styn",
+        "id_document": "132131",
+        "contact_info": {
+            "phone": "324324234343"
+        },
+        "is_vip": true,
+        "is_loyal_customer": false,
+        "preferences": [],
+        "stay_history": [
+            {
+                "reservation_id": "RES0001",
+                "room_number": "1",
+                "check_in": "2024-05-05",
+                "check_out": "2024-05-10"
+            },
+            {
+                "reservation_id": "RES0002",
+                "room_number": "2",
+                "check_in": "2025-01-04",
+                "check_out": "2025-01-14"
+            },
+            {
+                "reservation_id": "RES0003",
+                "room_number": "1",
+                "check_in": "2025-03-03",
+                "check_out": "2025-03-12"
+            },
+            {
+                "reservation_id": "RES0004",
+                "room_number": "1",
+                "check_in": "2026-01-01",
+                "check_out": "2026-01-10"
+            },
+            {
+                "reservation_id": "RES0005",
+                "room_number": "2",
+                "check_in": "2025-05-05",
+                "check_out": "2025-05-12"
+            }
+        ],
+        "loyalty_tier": "Gold"
+    },
+    {
+        "guest_id": "3",
+        "first_name": "Zuzia",
+        "last_name": "Nowak",
+        "id_document": "2312321",
+        "contact_info": {
+            "phone": "123321123",
+            "email": "zuzia@gmail.com"
+        },
+        "is_vip": false,
+        "is_loyal_customer": true,
+        "preferences": [],
+        "stay_history": [
+            {
+                "room_number": "2",
+                "check_in": "2025-05-05",
+                "check_out": "2025-05-12"
+            }
+        ],
+        "loyalty_tier": "Silver"
+    }
+]

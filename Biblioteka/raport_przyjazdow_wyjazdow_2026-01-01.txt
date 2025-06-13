@@ -1,0 +1,3 @@
+Raport przyjazdów i wyjazdów dla daty: 2026-01-01
+Liczba przyjazdów: 1
+Liczba wyjazdów: 0
