@@ -17,9 +17,3 @@ class ChartGenerator:
         plt.close()
         return path
 
- 
-
-   
-
-   
-

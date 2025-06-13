@@ -88,7 +88,7 @@ class PDFReportGenerator(FPDF):
         gps_coords = extracted.get('gps')
         if gps_coords:
             gps_text = ', '.join([f"{lat} {lon}" for lat, lon in gps_coords])
-            self.add_paragraph(f"Początek trasy: {gps_text}")
+            self.add_paragraph(f"Początek trasy: {gps_text} - koniec trasy")
 
         self.add_paragraph(f"Wysokości: {', '.join(map(str, extracted.get('elevations', []))) or 'Brak'} m n.p.m.")
         

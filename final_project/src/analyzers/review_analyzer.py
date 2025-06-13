@@ -11,7 +11,7 @@ class ReviewAnalyzer:
             r'(\d)\s*gwiazdek?',
             r'(\d)\s*gwiazdki',
         ]
-
+    
         for pattern in patterns:
             match = re.search(pattern, text)
             if match:
