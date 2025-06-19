@@ -1,0 +1,26 @@
+[
+    {
+        "username": "admin",
+        "password": "adminpass",
+        "role": "administrator",
+        "employee_id": "EMP000"
+    },
+    {
+        "username": "kamil",
+        "password": "kamil",
+        "role": "recepcjonista",
+        "employee_id": "1"
+    },
+    {
+        "username": "olek",
+        "password": "olek",
+        "role": "pokoj\u00f3wka",
+        "employee_id": "2"
+    },
+    {
+        "username": "franek",
+        "password": "franek",
+        "role": "pokoj\u00f3wka",
+        "employee_id": "6"
+    }
+]

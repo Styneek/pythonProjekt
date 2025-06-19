@@ -1,0 +1,6 @@
+Raport Zadań Sprzątania:
+Całkowita liczba zadań: 6
+Zadania oczekujące: 4
+Zadania w trakcie: 1
+Zadania ukończone: 0
+Zadania anulowane: 1

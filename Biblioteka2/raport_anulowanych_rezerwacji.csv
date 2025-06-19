@@ -1,0 +1,4 @@
+ID Rezerwacji,ID Gościa,Numer Pokoju,Data Zameldowania (Pierwotna),Data Wymeldowania (Pierwotna),Suma Rezerwacji
+RES0003,1,101,2025-03-03,2025-03-12,2106.0
+RES0006,3,102,2025-05-05,2025-06-05,9920.0
+RES0007,45,103,2025-05-05,2025-06-05,12000.0

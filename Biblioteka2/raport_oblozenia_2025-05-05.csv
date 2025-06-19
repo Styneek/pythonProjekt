@@ -1,0 +1,5 @@
+Data,Numer Pokoju,Typ Pokoju,Status,ID Rezerwacji,ID Gościa
+2025-05-05,101,apartament,Dostępny,N/A,N/A
+2025-05-05,102,podwójny,Zajęty,RES0005,1
+2025-05-05,103,podwójny,Dostępny,N/A,N/A
+2025-05-05,104,apartament,Dostępny,N/A,N/A

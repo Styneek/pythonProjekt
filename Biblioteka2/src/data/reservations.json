@@ -1,0 +1,101 @@
+[
+    {
+        "reservation_id": "RES0001",
+        "guest_id": "1",
+        "room_number": "101",
+        "check_in_date": "2024-05-05",
+        "check_out_date": "2024-05-10",
+        "status": "checked_out",
+        "total_price": 1170.0,
+        "payment_status": "paid",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0002",
+        "guest_id": "1",
+        "room_number": "102",
+        "check_in_date": "2025-01-04",
+        "check_out_date": "2025-01-14",
+        "status": "checked_in",
+        "total_price": 3200.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0003",
+        "guest_id": "1",
+        "room_number": "101",
+        "check_in_date": "2025-03-03",
+        "check_out_date": "2025-03-12",
+        "status": "cancelled",
+        "total_price": 2106.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0004",
+        "guest_id": "1",
+        "room_number": "101",
+        "check_in_date": "2026-01-01",
+        "check_out_date": "2026-01-10",
+        "status": "checked_out",
+        "total_price": 2106.0,
+        "payment_status": "partially_paid",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0005",
+        "guest_id": "1",
+        "room_number": "102",
+        "check_in_date": "2025-05-05",
+        "check_out_date": "2025-05-12",
+        "status": "active",
+        "total_price": 2240.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0006",
+        "guest_id": "3",
+        "room_number": "102",
+        "check_in_date": "2025-05-05",
+        "check_out_date": "2025-06-05",
+        "status": "cancelled",
+        "total_price": 9920.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0007",
+        "guest_id": "45",
+        "room_number": "103",
+        "check_in_date": "2025-05-05",
+        "check_out_date": "2025-06-05",
+        "status": "cancelled",
+        "total_price": 12000.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0008",
+        "guest_id": "45",
+        "room_number": "103",
+        "check_in_date": "2022-02-02",
+        "check_out_date": "2022-03-02",
+        "status": "checked_out",
+        "total_price": 7000.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    },
+    {
+        "reservation_id": "RES0009",
+        "guest_id": "4",
+        "room_number": "102",
+        "check_in_date": "2021-03-03",
+        "check_out_date": "2021-03-13",
+        "status": "cancelled",
+        "total_price": 2200.0,
+        "payment_status": "pending",
+        "applied_discount_id": null
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "number": "101",
+        "floor": 1,
+        "room_type": "apartament",
+        "price": 460.0,
+        "amenities": [
+            "TV"
+        ],
+        "status": "zaj\u0119ty"
+    },
+    {
+        "number": "102",
+        "floor": 1,
+        "room_type": "podw\u00f3jny",
+        "price": 220.0,
+        "amenities": [
+            "TV"
+        ],
+        "status": "dost\u0119pny"
+    },
+    {
+        "number": "103",
+        "floor": 1,
+        "room_type": "podw\u00f3jny",
+        "price": 250.0,
+        "amenities": [
+            "TV"
+        ],
+        "status": "dost\u0119pny"
+    },
+    {
+        "number": "104",
+        "floor": 1,
+        "room_type": "apartament",
+        "price": 444.0,
+        "amenities": [
+            "Wi-Fi"
+        ],
+        "status": "zaj\u0119ty"
+    },
+    {
+        "number": "105",
+        "floor": 1,
+        "room_type": "pojedynczy",
+        "price": 170.0,
+        "amenities": [
+            "brak"
+        ],
+        "status": "niedost\u0119pny"
+    }
+]

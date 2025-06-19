@@ -1,0 +1,60 @@
+[
+    {
+        "discount_id": "DISC0001",
+        "code": "5procent",
+        "percentage": 5.0,
+        "fixed_amount": 0.0,
+        "valid_from": null,
+        "valid_to": null,
+        "min_stay_days": 0,
+        "applicable_room_types": [],
+        "applicable_guest_ids": [],
+        "is_active": true,
+        "description": "",
+        "applicable_loyalty_tiers": []
+    },
+    {
+        "discount_id": "DISC0002",
+        "code": "123",
+        "percentage": 0.0,
+        "fixed_amount": 123.0,
+        "valid_from": null,
+        "valid_to": null,
+        "min_stay_days": 2,
+        "applicable_room_types": [
+            "podw\u00f3jny"
+        ],
+        "applicable_guest_ids": [],
+        "is_active": true,
+        "description": "",
+        "applicable_loyalty_tiers": []
+    },
+    {
+        "discount_id": "DISC0003",
+        "code": "500",
+        "percentage": 0.0,
+        "fixed_amount": 500.0,
+        "valid_from": "2025-05-05",
+        "valid_to": "2028-01-01",
+        "min_stay_days": 4,
+        "applicable_room_types": [],
+        "applicable_guest_ids": [],
+        "is_active": false,
+        "description": "500 minus",
+        "applicable_loyalty_tiers": []
+    },
+    {
+        "discount_id": "DISC0004",
+        "code": "1234",
+        "percentage": 0.0,
+        "fixed_amount": 1234.0,
+        "valid_from": null,
+        "valid_to": null,
+        "min_stay_days": 0,
+        "applicable_room_types": [],
+        "applicable_guest_ids": [],
+        "is_active": true,
+        "description": "",
+        "applicable_loyalty_tiers": []
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "invoice_id": "INV0001",
+        "reservation_id": "RES0001",
+        "guest_id": "1",
+        "issue_date": "2025-06-06",
+        "due_date": "2025-06-13",
+        "total_amount": 2340.0,
+        "paid_amount": 2600.0,
+        "status": "paid",
+        "line_items": [
+            {
+                "description": "Op\u0142ata za pok\u00f3j (Pok\u00f3j 1, 2024-05-05 do 2024-05-10)",
+                "amount": 1170.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "INV0002",
+        "reservation_id": "RES0004",
+        "guest_id": "1",
+        "issue_date": "2025-06-16",
+        "due_date": "2025-06-23",
+        "total_amount": 4212.0,
+        "paid_amount": 0.0,
+        "status": "pending",
+        "line_items": [
+            {
+                "description": "Op\u0142ata za pok\u00f3j (Pok\u00f3j 1, 2026-01-01 do 2026-01-10)",
+                "amount": 2106.0
+            }
+        ]
+    }
+]

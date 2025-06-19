@@ -1,0 +1,56 @@
+[
+    {
+        "task_id": "HKT0003",
+        "room_number": "3",
+        "assigned_to": "ZXuzia",
+        "due_date": "2025-06-06",
+        "status": "cancelled",
+        "completed_date": null,
+        "notes": ""
+    },
+    {
+        "task_id": "HKT0003",
+        "room_number": "1",
+        "assigned_to": "Klaudia",
+        "due_date": "2025-01-03",
+        "status": "pending",
+        "completed_date": null,
+        "notes": ""
+    },
+    {
+        "task_id": "HKT0004",
+        "room_number": "3",
+        "assigned_to": "Franek",
+        "due_date": "2025-02-02",
+        "status": "pending",
+        "completed_date": null,
+        "notes": ""
+    },
+    {
+        "task_id": "HKT0005",
+        "room_number": "103",
+        "assigned_to": "Nieprzypisane",
+        "due_date": "2022-03-02",
+        "status": "pending",
+        "completed_date": null,
+        "notes": "Sprz\u0105tanie po wymeldowaniu rezerwacji RES0008"
+    },
+    {
+        "task_id": "HKT0006",
+        "room_number": "101",
+        "assigned_to": "Nieprzypisane",
+        "due_date": "2026-01-10",
+        "status": "pending",
+        "completed_date": null,
+        "notes": "Sprz\u0105tanie po wymeldowaniu rezerwacji RES0004"
+    },
+    {
+        "task_id": "HKT0007",
+        "room_number": "104",
+        "assigned_to": "Szymon",
+        "due_date": "2025-05-05",
+        "status": "in_progress",
+        "completed_date": null,
+        "notes": "brak "
+    }
+]
