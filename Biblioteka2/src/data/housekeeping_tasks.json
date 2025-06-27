@@ -52,5 +52,14 @@
         "status": "in_progress",
         "completed_date": null,
         "notes": "brak "
+    },
+    {
+        "task_id": "HKT0007",
+        "room_number": "102",
+        "assigned_to": "Nieprzypisane",
+        "due_date": "2025-05-12",
+        "status": "pending",
+        "completed_date": null,
+        "notes": "Sprz\u0105tanie po wymeldowaniu rezerwacji RES0001"
     }
 ]

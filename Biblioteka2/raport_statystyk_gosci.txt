@@ -1,5 +1,5 @@
 Raport Statystyk Gości:
-Całkowita liczba gości: 3
-Goście VIP: 3
+Całkowita liczba gości: 4
+Goście VIP: 2
 Lojalni klienci: 1
-Statystyki poziomów lojalności: {'Gold': 1, 'Bronze': 2}
+Statystyki poziomów lojalności: {'Silver': 3, 'Bronze': 1}

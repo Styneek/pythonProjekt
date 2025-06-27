@@ -20,7 +20,7 @@ Ta aplikacja konsolowa służy do zarządzania operacjami hotelowymi, w tym reze
 1.  **Sklonuj repozytorium:**
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Styneek/pythonProjekt
     cd hotel_reservation_system
     ```
 
@@ -46,5 +46,3 @@ Aby uruchomić aplikację:
 ```bash
 python main.py
 ```
-
-Postępuj zgodnie z instrukcjami w menu, aby nawigować po funkcjonalnościach systemu.

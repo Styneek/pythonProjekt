@@ -1,21 +1,14 @@
 import logging
 from src.models.housekeeping_task import HousekeepingTask
-from src.data.data_manager import DataManager
-from src.services.room_service import RoomService
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger('hotel_reservation_app')  
 
 class HousekeepingService:
-    def __init__(self, data_manager: DataManager, room_service: RoomService):
-        self.data_manager = data_manager
+    def __init__(self, db_manager, room_service):
+        self.db_manager = db_manager
         self.room_service = room_service
-        self.tasks = self.data_manager.load_housekeeping_tasks()
-        logger.info("HousekeepingService zainicjowany.")
-
-    def _save_tasks(self):
-        self.data_manager.save_housekeeping_tasks(self.tasks)
-        logger.debug("Zapisano zadania sprzątania do pliku.")
+        logger.info("HousekeepingService zainicjowany (DB).")
 
     def create_task(self, room_number, assigned_to, due_date_str, notes=""):
         room = self.room_service.get_room(room_number)
@@ -24,28 +17,36 @@ class HousekeepingService:
             logger.warning(f"Próba utworzenia zadania sprzątania dla nieistniejącego pokoju: {room_number}")
             return None
         try:
-            due_date = datetime.strptime(due_date_str, "%Y-%m-%d").strftime("%Y-%m-%d")
+            due_date = datetime.strptime(due_date_str, "%Y-%m-%d")
         except ValueError as e:
             print("Błąd: Nieprawidłowy format daty. Użyj RRRR-MM-DD.")
             logger.error(f"Błąd formatu daty podczas tworzenia zadania sprzątania: {due_date_str} - {e}")
             return None
-        
-        for task in self.tasks:
+        # Sprawdź czy istnieje aktywne zadanie dla pokoju
+        for task in self.db_manager.get_all_housekeeping_tasks():
             if task.room_number == room_number and task.status in ["pending", "in_progress"]:
                 print(f"Ostrzeżenie: Istnieje już aktywne zadanie sprzątania dla pokoju {room_number}. Nie tworzę nowego.")
                 logger.warning(f"Istnieje już aktywne zadanie sprzątania dla pokoju {room_number}. Nie tworzę nowego.")
                 return None 
-
-        task_id = f"HKT{len(self.tasks) + 1:04d}"
-        task = HousekeepingTask(task_id, room_number, assigned_to, due_date, notes=notes)
-        self.tasks.append(task)
-        self._save_tasks()
-        print(f"Zadanie sprzątania {task_id} dla pokoju {room_number} zostało utworzone i przypisane do {assigned_to}. Termin: {due_date}.")
-        logger.info(f"Utworzono zadanie sprzątania: {task_id} dla pokoju {room_number}, przypisane do {assigned_to}, termin: {due_date}.")
+        all_tasks = self.db_manager.get_all_housekeeping_tasks()
+        # Generowanie task_id
+        task_id = f"HKT{len(all_tasks) + 1:04d}"
+        task_data = {
+            "task_id": task_id,
+            "room_number": room_number,
+            "assigned_to": assigned_to,
+            "due_date": due_date,
+            "status": "pending",
+            "completed_date": None,
+            "notes": notes
+        }
+        task = self.db_manager.add_housekeeping_task(task_data)
+        print(f"Zadanie sprzątania {task_id} dla pokoju {room_number} zostało utworzone i przypisane do {assigned_to}. Termin: {due_date_str}.")
+        logger.info(f"Utworzono zadanie sprzątania: {task_id} dla pokoju {room_number}, przypisane do {assigned_to}, termin: {due_date_str}.")
         return task
 
     def get_task(self, task_id):
-        task = next((task for task in self.tasks if task.task_id == task_id), None)
+        task = self.db_manager.get_housekeeping_task(task_id)
         if task:
             logger.debug(f"Pobrano zadanie sprzątania: {task_id}")
         else:
@@ -58,48 +59,48 @@ class HousekeepingService:
             print(f"Błąd: Zadanie sprzątania {task_id} nie znaleziono.")
             logger.warning(f"Próba aktualizacji statusu nieistniejącego zadania sprzątania: {task_id}")
             return False
-
+        #tylko admin i pokojowka moga zaznacza za skonczone
         if new_status == "completed" and current_user_role not in ["pokojówka", "administrator"]:
             print(f"Błąd: Rola {current_user_role} nie ma uprawnień do oznaczania zadań jako ukończone.")
             logger.warning(f"Użytkownik z rolą {current_user_role} próbował ukończyć zadanie {task_id} bez uprawnień.")
             return False
         if new_status in ["in_progress", "pending", "cancelled"] and current_user_role not in ["pokojówka", "recepcjonista", "administrator"]:
-             print(f"Błąd: Rola {current_user_role} nie ma uprawnień do zmiany statusu zadania na {new_status}.")
-             logger.warning(f"Użytkownik z rolą {current_user_role} próbował zmienić status zadania {task_id} na {new_status} bez uprawnień.")
-             return False
-
+            print(f"Błąd: Rola {current_user_role} nie ma uprawnień do zmiany statusu zadania na {new_status}.")
+            logger.warning(f"Użytkownik z rolą {current_user_role} próbował zmienić status zadania {task_id} na {new_status} bez uprawnień.")
+            return False
         completed_date = None
         if new_status == "completed" and not completed_date_str:
-            completed_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            completed_date = datetime.now()
         elif completed_date_str:
             try:
-                completed_date = datetime.strptime(completed_date_str, "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
+                completed_date = datetime.strptime(completed_date_str, "%Y-%m-%d %H:%M:%S")
             except ValueError as e:
                 print("Błąd: Nieprawidłowy format daty ukończenia. Użyj RRRR-MM-DD GG:MM:SS.")
                 logger.error(f"Błąd formatu daty ukończenia zadania {task_id}: {completed_date_str} - {e}")
                 return False
-
-        if task.update_status(new_status, completed_date):
-            self._save_tasks()
-            if new_status == "completed":
-                room = self.room_service.get_room(task.room_number)
-                if room and room.status == "cleaning":
-                    self.room_service.update_room_status(room.number, "available")
-                    print(f"Status pokoju {room.number} zaktualizowano na 'dostępny' po ukończeniu sprzątania.")
-                    logger.info(f"Pokój {room.number} zaktualizowano na 'dostępny' po ukończeniu zadania sprzątania {task_id}.")
-            print(f"Status zadania {task_id} zaktualizowano na '{new_status}'.")
-            logger.info(f"Zaktualizowano status zadania sprzątania {task_id} na {new_status}.")
-            return True
-        else:
-            print(f"Błąd: Nieprawidłowy status '{new_status}' dla zadania {task_id}. Możliwe stany: pending, in_progress, completed, cancelled.")
+        valid_statuses = ["pending", "in_progress", "completed", "cancelled"]
+        if new_status not in valid_statuses:
+            print(f"Błąd: Nieprawidłowy status '{new_status}' dla zadania {task_id}. Możliwe stany: {', '.join(valid_statuses)}.")
             logger.warning(f"Nieprawidłowy status {new_status} dla zadania sprzątania {task_id}")
             return False
+        update_data = {"status": new_status}#tworze slownik z nowym statusem
+        if new_status == "completed":
+            update_data["completed_date"] = completed_date
+        self.db_manager.update_housekeeping_task(task_id, update_data)#aktualizuje w bazie
+        if new_status == "completed":
+            room = self.room_service.get_room(task.room_number)
+            if room and room.status == "cleaning":
+                self.room_service.update_room_status(room.number, "available")
+                print(f"Status pokoju {room.number} zaktualizowano na 'dostępny' po ukończeniu sprzątania.")
+                logger.info(f"Pokój {room.number} zaktualizowano na 'dostępny' po ukończeniu zadania sprzątania {task_id}.")
+        print(f"Status zadania {task_id} zaktualizowano na '{new_status}'.")
+        logger.info(f"Zaktualizowano status zadania sprzątania {task_id} na {new_status}.")
+        return True
 
     def assign_task(self, task_id, assigned_to):
         task = self.get_task(task_id)
         if task:
-            task.assigned_to = assigned_to
-            self._save_tasks()
+            self.db_manager.update_housekeeping_task(task_id, {"assigned_to": assigned_to})
             print(f"Zadanie {task_id} przypisano do {assigned_to} pomyślnie.")
             logger.info(f"Przypisano zadanie sprzątania {task_id} do {assigned_to}.")
             return True
@@ -108,10 +109,8 @@ class HousekeepingService:
         return False
 
     def delete_task(self, task_id):
-        original_len = len(self.tasks)
-        self.tasks = [task for task in self.tasks if task.task_id != task_id]
-        if len(self.tasks) < original_len:
-            self._save_tasks()
+        result = self.db_manager.delete_housekeeping_task(task_id)
+        if result:
             print(f"Zadanie sprzątania {task_id} zostało usunięte pomyślnie.")
             logger.info(f"Usunięto zadanie sprzątania: {task_id}")
             return True
@@ -120,12 +119,13 @@ class HousekeepingService:
         return False
 
     def list_all_tasks(self):
-        if not self.tasks:
+        tasks = self.db_manager.get_all_housekeeping_tasks()
+        if not tasks:
             print("Brak zadań sprzątania w systemie.")
             logger.info("Brak zadań sprzątania w systemie do wyświetlenia.")
             return []
         logger.info("Wyświetlono wszystkie zadania sprzątania.")
-        return self.tasks
+        return tasks
 
     def get_daily_schedule(self, date_str):
         try:
@@ -134,9 +134,7 @@ class HousekeepingService:
             print("Błąd: Nieprawidłowy format daty. Użyj RRRR-MM-DD.")
             logger.error(f"Błąd formatu daty podczas generowania harmonogramu dziennego: {date_str} - {e}")
             return []
-
-        daily_tasks = [task for task in self.tasks if datetime.strptime(task.due_date, "%Y-%m-%d").date() == schedule_date and task.status != "completed"]
-
+        daily_tasks = [task for task in self.db_manager.get_all_housekeeping_tasks() if task.due_date.date() == schedule_date and task.status != "completed"]
         if not daily_tasks:
             print("Brak zaplanowanych zadań sprzątania na ten dzień.")
             logger.info(f"Brak zaplanowanych zadań sprzątania na {date_str}.")

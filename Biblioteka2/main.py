@@ -23,6 +23,7 @@ from src.constants.status_mappings import (
     INVOICE_STATUSES, INVOICE_STATUS_MAPPING, REVERSE_INVOICE_STATUS_MAPPING,
     HOUSEKEEPING_TASK_STATUSES, HOUSEKEEPING_STATUS_MAPPING, REVERSE_HOUSEKEEPING_STATUS_MAPPING
 )
+from src.database.db_manager import DatabaseManager
 
 ROOM_TYPES = ["pojedynczy", "podwójny", "apartament"]
 GUEST_LOYALTY_TIERS = ["Bronze", "Silver", "Gold", "Platinum"]
@@ -44,36 +45,37 @@ setup_logging()
 logger = logging.getLogger('hotel_reservation_app')
 
 def display_table(data_list, headers_map, title="Wyniki"):
+    #jak lista pusta to:
     if not data_list:
         print(Fore.YELLOW + "Brak danych do wyświetlenia.")
         return
 
-    headers = list(headers_map.keys())
-    attrs = list(headers_map.values())
+    headers = list(headers_map.keys())#naglowki kolumn
+    attrs = list(headers_map.values())#atrybuty
 
-    col_widths = {header: len(header) for header in headers}
+    col_widths = {header: len(header) for header in headers}#szerokosc tyle co naglowek
     for item in data_list:
-        for header, attr in headers_map.items():
-            if callable(attr):
-                value = str(attr(item))
+        for header, attr in headers_map.items():#dla kazdego naglowka odpowiadajacy mu atrybut
+            if callable(attr):#callable sprawdzam czy moge wywolac jako funkcje
+                value = str(attr(item))#zamieniam na stringa
             else:
-                value = item.get(attr, "N/A") if isinstance(item, dict) else getattr(item, attr, "N/A")
+                value = item.get(attr, "N/A") if isinstance(item, dict) else getattr(item, attr, "N/A")#jesli item to slownik to pobieramy wartosc kucza
             col_widths[header] = max(col_widths[header], len(str(value)))
 
     print(Fore.CYAN + f"\n--- {title} ---")
 
-    header_str = " | ".join(f"{header:<{col_widths[header]}}" for header in headers)
+    header_str = " | ".join(f"{header:<{col_widths[header]}}" for header in headers)#lista naglowkow
     print(Fore.GREEN + header_str)
-    print("-" * len(header_str))
+    print("-" * len(header_str))#robi - na szerokosc naglowka
 
     for item in data_list:
-        row_values = []
+        row_values = []#przechowuje wartosci kolumn
         for header, attr in headers_map.items():
-            if callable(attr):
-                value = str(attr(item))
+            if callable(attr):#callable sprawdzam czy moge wywolac jako funkcje
+                value = str(attr(item))#zamieniam na stringa
             else:
-                value = item.get(attr, "N/A") if isinstance(item, dict) else getattr(item, attr, "N/A")
-            row_values.append(f"{str(value):<{col_widths[header]}}")
+                value = item.get(attr, "N/A") if isinstance(item, dict) else getattr(item, attr, "N/A")#jesli item tto slownik to pobieram wartosc klucza
+            row_values.append(f"{str(value):<{col_widths[header]}}")#dodaje
         print(" | ".join(row_values))
     print()
 
@@ -152,7 +154,7 @@ def manage_rooms_menu(room_service: RoomService, current_user: User):
                 logger.error(f"Błąd podczas dodawania pokoju (ValueError): {e}")
 
         elif choice == '2':
-            all_rooms = room_service.rooms
+            all_rooms = room_service.list_all_rooms()
             display_table(all_rooms, {"Numer Pokoju": "number", "Piętro": "floor", "Typ": "room_type", "Cena": "price", "Udogodnienia": "amenities", "Status": "status"}, "Wszystkie Pokoje")
             logger.info("Wyświetlono wszystkie pokoje.")
 
@@ -161,7 +163,7 @@ def manage_rooms_menu(room_service: RoomService, current_user: User):
             number = input("Wprowadź numer pokoju do edycji: ")
             room = room_service.get_room(number)
             if room:
-                print(f"Obecne dane dla Pokoju {number}: {room}")
+                print(f"Obecne dane dla Pokoju {number}")
                 kwargs = {}
                 try:
                     new_floor = input(f"Wprowadź nowe piętro (obecne: {room.floor}, pozostaw puste, aby zachować): ")
@@ -253,8 +255,7 @@ def manage_rooms_menu(room_service: RoomService, current_user: User):
             sort_by = next(key for key, value in sort_options.items() if value == sort_by)
             reverse_str = input("Kolejność malejąca? (tak/nie): ").lower()
             reverse = True if reverse_str == 'tak' else False
-            
-            all_rooms = room_service.rooms
+            all_rooms = room_service.list_all_rooms()
             sorted_rooms = room_service.sort_rooms(all_rooms, sort_by, reverse)
             if sorted_rooms:
                 display_table(sorted_rooms, {"Numer Pokoju": "number", "Piętro": "floor", "Typ": "room_type", "Cena": "price", "Udogodnienia": "amenities", "Status": "status"}, "Posortowane Pokoje")
@@ -462,16 +463,21 @@ def manage_reservations_menu(reservation_service: ReservationService, room_servi
 
         elif choice == '2':
             all_reservations = reservation_service.list_all_reservations()
+            def get_discount_code(res):
+                if hasattr(res, 'applied_discount_id') and res.applied_discount_id:
+                    discount = discount_service.get_discount(res.applied_discount_id)
+                    return discount.code if discount else res.applied_discount_id
+                return "N/A"
             display_table(all_reservations, {
                 "ID Rezerwacji": "reservation_id", 
                 "ID Gościa": "guest_id", 
                 "Numer Pokoju": "room_number", 
-                "Zameldowanie": "check_in_date", 
-                "Wymeldowanie": "check_out_date", 
+                "Zameldowanie": lambda x: x.check_in.strftime('%Y-%m-%d') if x.check_in else "N/A", 
+                "Wymeldowanie": lambda x: x.check_out.strftime('%Y-%m-%d') if x.check_out else "N/A", 
                 "Cena": "total_price", 
                 "Status": lambda x: REVERSE_RESERVATION_STATUS_MAPPING.get(x.status, x.status), 
                 "Status Płatności": lambda x: REVERSE_PAYMENT_STATUS_MAPPING.get(x.payment_status, x.payment_status), 
-                "Rabat": "applied_discount_id"
+                "Rabat": get_discount_code
             }, "Wszystkie Rezerwacje")
 
         elif choice == '3':
@@ -485,9 +491,9 @@ def manage_reservations_menu(reservation_service: ReservationService, room_servi
                 if new_guest_id: kwargs['guest_id'] = new_guest_id
                 new_room_number = input(f"Wprowadź nowy numer pokoju (obecny: {reservation.room_number}, pozostaw puste, aby zachować): ")
                 if new_room_number: kwargs['room_number'] = new_room_number
-                new_check_in = input(f"Wprowadź nową datę zameldowania (obecna: {reservation.check_in_date}, RRRR-MM-DD, pozostaw puste, aby zachować): ")
+                new_check_in = input(f"Wprowadź nową datę zameldowania (obecna: {reservation.check_in.strftime('%Y-%m-%d') if hasattr(reservation.check_in, 'strftime') else reservation.check_in}, RRRR-MM-DD, pozostaw puste, aby zachować): ")
                 if new_check_in: kwargs['check_in_date'] = new_check_in
-                new_check_out = input(f"Wprowadź nową datę wymeldowania (obecna: {reservation.check_out_date}, RRRR-MM-DD, pozostaw puste, aby zachować): ")
+                new_check_out = input(f"Wprowadź nową datę wymeldowania (obecna: {reservation.check_out.strftime('%Y-%m-%d') if hasattr(reservation.check_out, 'strftime') else reservation.check_out}, RRRR-MM-DD, pozostaw puste, aby zachować): ")
                 if new_check_out: kwargs['check_out_date'] = new_check_out
                 new_total_price = input(f"Wprowadź nową całkowitą cenę (obecna: {reservation.total_price}, pozostaw puste, aby zachować): ")
                 if new_total_price: kwargs['total_price'] = float(new_total_price)
@@ -562,7 +568,7 @@ def manage_reservations_menu(reservation_service: ReservationService, room_servi
                 "ID Rezerwacji": "reservation_id", 
                 "ID Gościa": "guest_id", 
                 "Numer Pokoju": "room_number", 
-                "Zameldowanie": "check_in_date", 
+                "Zameldowanie": lambda x: x.check_in.strftime('%Y-%m-%d') if x.check_in else "N/A", 
                 "Status": lambda x: REVERSE_RESERVATION_STATUS_MAPPING.get(x.status, x.status)
             }, "Znalezione Rezerwacje")
 
@@ -593,8 +599,8 @@ def manage_reservations_menu(reservation_service: ReservationService, room_servi
                 "ID Rezerwacji": "reservation_id", 
                 "ID Gościa": "guest_id", 
                 "Numer Pokoju": "room_number", 
-                "Zameldowanie": "check_in_date", 
-                "Wymeldowanie": "check_out_date", 
+                "Zameldowanie": lambda x: x.check_in.strftime('%Y-%m-%d') if x.check_in else "N/A", 
+                "Wymeldowanie": lambda x: x.check_out.strftime('%Y-%m-%d') if x.check_out else "N/A", 
                 "Cena": "total_price", 
                 "Status": lambda x: REVERSE_RESERVATION_STATUS_MAPPING.get(x.status, x.status), 
                 "Status Płatności": lambda x: REVERSE_PAYMENT_STATUS_MAPPING.get(x.payment_status, x.payment_status), 
@@ -800,12 +806,12 @@ def manage_reports_menu(report_service: ReportService, room_service: RoomService
         choice = input(Fore.GREEN + "Wprowadź swój wybór: ")
 
         report_options = [
-            "Raport Dziennego Obłożenia",
-            "Raport Przychodów za Okres",
-            "Raport Anulowanych Rezerwacji",
-            "Raport Przyjazdów i Wyjazdów",
-            "Raport Statystyk Gości",
-            "Raport Zadań Sprzątania"
+            "1. Raport Dziennego Obłożenia",
+            "2. Raport Przychodów za Okres",
+            "3. Raport Anulowanych Rezerwacji",
+            "4. Raport Przyjazdów i Wyjazdów",
+            "5. Raport Statystyk Gości",
+            "6. Raport Zadań Sprzątania"
         ]
 
         structured_data = []
@@ -883,7 +889,8 @@ def manage_reports_menu(report_service: ReportService, room_service: RoomService
             report_type_name = "Anulowanych Rezerwacji"
         elif choice == '4':
             date_str = input("Wprowadź datę dla raportu przyjazdów/wyjazdów (RRRR-MM-DD): ")
-            report_content, structured_data = report_service.generate_arrivals_departures_report(date_str)
+            report_content, arrivals, departures = report_service.generate_arrivals_departures_report(date_str)
+            structured_data = arrivals + departures
             
             if not structured_data and not report_content:
                 report_content = "Brak danych do wygenerowania raportu przyjazdów i wyjazdów."
@@ -941,7 +948,7 @@ def manage_reports_menu(report_service: ReportService, room_service: RoomService
                 }
                 display_table(structured_data, headers, "Szczegóły Zadań Sprzątania")
         elif choice == '7':
-            report_service.plot_occupancy_by_room_type(room_service.rooms) 
+            report_service.plot_occupancy_by_room_type(room_service.list_all_rooms()) 
         elif choice == '8':
             print(Fore.CYAN + "\n--- Eksportuj Raport do Pliku ---")
             print(Fore.YELLOW + "Który raport chcesz wyeksportować?")
@@ -951,14 +958,12 @@ def manage_reports_menu(report_service: ReportService, room_service: RoomService
             print(Fore.YELLOW + "4. Raport Przyjazdów i Wyjazdów")
             print(Fore.YELLOW + "5. Raport Statystyk Gości")
             print(Fore.YELLOW + "6. Raport Zadań Sprzątania")
-            report_choice_num = get_numerical_choice(report_options, "Wprowadź wybór raportu do eksportu:")
-            
-            if not report_choice_num:
-                print(Fore.RED + "Wybór raportu jest wymagany. Anulowano eksport.")
+            report_choice_num = input(Fore.GREEN + "Wprowadź wybór raportu do eksportu: ")
+            if report_choice_num not in [str(i) for i in range(1, 7)]:
+                print(Fore.RED + "Nieprawidłowy wybór raportu. Anulowano eksport.")
                 continue
-
-            report_choice_index = report_options.index(report_choice_num)
-            report_choice = str(report_choice_index + 1) 
+            report_choice = report_choice_num
+            
             report_content_export = None
             structured_data_export = []
             filename_export_base = ""
@@ -1009,7 +1014,8 @@ def manage_reports_menu(report_service: ReportService, room_service: RoomService
                 report_type_export_name = "Anulowanych Rezerwacji"
             elif report_choice == '4':
                 date_str = input("Wprowadź datę dla raportu przyjazdów/wyjazdów (RRRR-MM-DD): ")
-                report_content_export, structured_data_export = report_service.generate_arrivals_departures_report(date_str)
+                report_content_export, arrivals, departures = report_service.generate_arrivals_departures_report(date_str)
+                structured_data_export = arrivals + departures
                 
                 if not structured_data_export and not report_content_export:
                     report_content_export = "Brak danych do wygenerowania raportu przyjazdów i wyjazdów."
@@ -1114,7 +1120,7 @@ def manage_users_menu(user_service: UserService, current_user: User):
             user_service.add_user(username, password, role, employee_id if employee_id else None)
 
         elif choice == '2':
-            all_users = user_service.users
+            all_users = user_service.list_all_users()
             display_table(all_users, {"Nazwa Użytkownika": "username", "Rola": "role", "ID Pracownika": "employee_id"}, "Wszyscy Użytkownicy")
 
         elif choice == '3':
@@ -1161,8 +1167,8 @@ def manage_discounts_menu(discount_service: DiscountService, current_user: User)
         print(Fore.YELLOW + "2. Wyświetl Wszystkie Rabaty")
         print(Fore.YELLOW + "3. Edytuj Rabat")
         print(Fore.YELLOW + "4. Usuń Rabat")
-        print(Fore.YELLOW + "5. Znajdź Obowiązujące Rabaty")
-        print(Fore.YELLOW + "6. Powrót do Głównego Menu")
+        # print(Fore.YELLOW + "5. Znajdź Obowiązujące Rabaty")
+        print(Fore.YELLOW + "5. Powrót do Głównego Menu")
         choice = input(Fore.GREEN + "Wprowadź swój wybór: ")
 
         if choice == '1':
@@ -1188,7 +1194,7 @@ def manage_discounts_menu(discount_service: DiscountService, current_user: User)
                                           min_stay_days, applicable_room_types, applicable_guest_ids, description, applicable_loyalty_tiers)
 
         elif choice == '2':
-            all_discounts = discount_service.discounts
+            all_discounts = discount_service.list_all_discounts()
             display_table(all_discounts, {"ID Rabatu": "discount_id", "Kod": "code", "Procent": "percentage", "Kwota Stała": "fixed_amount", "Ważny od": "valid_from", "Ważny do": "valid_to", "Min. Pobyt": "min_stay_days", "Typy Pokoi": "applicable_room_types", "ID Gości": "applicable_guest_ids", "Status": "is_active", "Poziomy Lojalności": "applicable_loyalty_tiers", "Opis": "description"}, "Wszystkie Rabaty")
 
         elif choice == '3':
@@ -1229,26 +1235,26 @@ def manage_discounts_menu(discount_service: DiscountService, current_user: User)
             discount_code = input("Wprowadź kod rabatowy do usunięcia: ")
             discount_service.delete_discount(discount_code)
 
+        # elif choice == '5':
+        #     print(Fore.CYAN + "\n--- Znajdź Obowiązujące Rabaty ---")
+        #     check_date_str = input("Wprowadź datę sprawdzania (RRRR-MM-DD, pozostaw puste dla dzisiaj): ")
+        #     room_type = get_numerical_choice(ROOM_TYPES, "Wybierz typ pokoju (opcjonalnie):", allow_empty=True)
+        #     guest_id = input("Wprowadź ID gościa (opcjonalnie): ")
+        #     stay_duration_days_str = input("Wprowadź liczbę dni pobytu (0 jeśli brak wymogu): ")
+        #     guest_loyalty_tier = get_numerical_choice(GUEST_LOYALTY_TIERS, "Wprowadź poziom lojalności gościa (pozostaw puste, aby pominąć):", allow_empty=True)
+
+        #     stay_duration_days = int(stay_duration_days_str) if stay_duration_days_str else 0
+
+        #     applicable_discounts = discount_service.find_applicable_discounts(
+        #         check_date_str if check_date_str else None,
+        #         room_type,
+        #         guest_id if guest_id else None,
+        #         stay_duration_days,
+        #         guest_loyalty_tier
+        #     )
+        #     display_table(applicable_discounts, {"ID Rabatu": "discount_id", "Kod": "code", "Procent": "percentage", "Kwota Stała": "fixed_amount", "Ważny od": "valid_from", "Ważny do": "valid_to", "Min. Pobyt": "min_stay_days", "Typy Pokoi": "applicable_room_types", "ID Gości": "applicable_guest_ids", "Status": "is_active", "Poziomy Lojalności": "applicable_loyalty_tiers", "Opis": "description"}, "Obowiązujące Rabaty")
+
         elif choice == '5':
-            print(Fore.CYAN + "\n--- Znajdź Obowiązujące Rabaty ---")
-            check_date_str = input("Wprowadź datę sprawdzania (RRRR-MM-DD, pozostaw puste dla dzisiaj): ")
-            room_type = get_numerical_choice(ROOM_TYPES, "Wybierz typ pokoju (opcjonalnie):", allow_empty=True)
-            guest_id = input("Wprowadź ID gościa (opcjonalnie): ")
-            stay_duration_days_str = input("Wprowadź liczbę dni pobytu (0 jeśli brak wymogu): ")
-            guest_loyalty_tier = get_numerical_choice(GUEST_LOYALTY_TIERS, "Wprowadź poziom lojalności gościa (pozostaw puste, aby pominąć):", allow_empty=True)
-
-            stay_duration_days = int(stay_duration_days_str) if stay_duration_days_str else 0
-
-            applicable_discounts = discount_service.find_applicable_discounts(
-                check_date_str if check_date_str else None,
-                room_type,
-                guest_id if guest_id else None,
-                stay_duration_days,
-                guest_loyalty_tier
-            )
-            display_table(applicable_discounts, {"ID Rabatu": "discount_id", "Kod": "code", "Procent": "percentage", "Kwota Stała": "fixed_amount", "Ważny od": "valid_from", "Ważny do": "valid_to", "Min. Pobyt": "min_stay_days", "Typy Pokoi": "applicable_room_types", "ID Gości": "applicable_guest_ids", "Status": "is_active", "Poziomy Lojalności": "applicable_loyalty_tiers", "Opis": "description"}, "Obowiązujące Rabaty")
-
-        elif choice == '6':
             break
         else:
             print(Fore.RED + "Nieprawidłowy wybór. Spróbuj ponownie.")
@@ -1337,14 +1343,15 @@ def main():
     data_directory = config.get("data_directory", "src/data") 
     
     data_manager = DataManager(data_dir=data_directory)
-    room_service = RoomService(data_manager)
-    guest_service = GuestService(data_manager)
-    housekeeping_service = HousekeepingService(data_manager, room_service)
-    discount_service = DiscountService(data_manager)
-    reservation_service = ReservationService(data_manager, room_service, guest_service, housekeeping_service, discount_service)
-    payment_service = PaymentService(data_manager, reservation_service)
-    report_service = ReportService(data_manager, reservation_service, room_service, guest_service, payment_service, housekeeping_service)
-    user_service = UserService(data_manager)
+    db_manager = DatabaseManager()
+    room_service = RoomService(db_manager)
+    guest_service = GuestService(db_manager)
+    housekeeping_service = HousekeepingService(db_manager, room_service)
+    discount_service = DiscountService(db_manager)
+    reservation_service = ReservationService(db_manager, room_service, guest_service, housekeeping_service, discount_service)
+    payment_service = PaymentService(db_manager, reservation_service)
+    report_service = ReportService(reservation_service, room_service, guest_service, payment_service, housekeeping_service)
+    user_service = UserService(db_manager)
 
     current_user = None
     while current_user is None:

@@ -1,2 +1,2 @@
-Raport Anulowanych Rezerwacji dla okresu: wszystkie do wszystkie
-Liczba anulowanych rezerwacji: 1
+Raport Anulowanych Rezerwacji dla okresu: 2025-01-01 do 2025-09-09
+Liczba anulowanych rezerwacji: 0

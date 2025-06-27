@@ -1,7 +1,6 @@
 import logging
-from src.models.payment import Payment
-from src.models.invoice import Invoice
-from src.data.data_manager import DataManager
+from src.database.db_manager import DatabaseManager
+from src.database.models import Payment, Invoice
 from src.services.reservation_service import ReservationService
 from datetime import datetime, timedelta
 from reportlab.lib import colors
@@ -9,11 +8,9 @@ from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import cm
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 import os
 
-logger = logging.getLogger('hotel_reservation_app') 
+logger = logging.getLogger('hotel_reservation_app')
 
 INVOICE_STATUSES = ["oczekująca", "opłacona", "częściowo opłacona"]
 INVOICE_STATUS_MAPPING = {
@@ -24,21 +21,10 @@ INVOICE_STATUS_MAPPING = {
 REVERSE_INVOICE_STATUS_MAPPING = {v: k for k, v in INVOICE_STATUS_MAPPING.items()}
 
 class PaymentService:
-    def __init__(self, data_manager: DataManager, reservation_service: ReservationService):
-        self.data_manager = data_manager
+    def __init__(self, db_manager: DatabaseManager, reservation_service: ReservationService):
+        self.db_manager = db_manager
         self.reservation_service = reservation_service
-        
-        self.payments = self.data_manager.load_payments()
-        self.invoices = self.data_manager.load_invoices()
-        logger.info("PaymentService zainicjowany.")
-
-    def _save_payments(self):
-        self.data_manager.save_payments(self.payments)
-        logger.debug("Zapisano płatności do pliku.")
-
-    def _save_invoices(self):
-        self.data_manager.save_invoices(self.invoices)
-        logger.debug("Zapisano faktury do pliku.")
+        logger.info("PaymentService zainicjowany (DB).")
 
     def record_payment(self, reservation_id, amount, payment_method):
         reservation = self.reservation_service.get_reservation(reservation_id)
@@ -47,19 +33,27 @@ class PaymentService:
             logger.warning(f"Próba zarejestrowania płatności dla nieistniejącej rezerwacji: {reservation_id}")
             return None
 
-        payment_id = f"PAY{len(self.payments) + 1:04d}"
-        payment_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        payment = Payment(payment_id, reservation_id, amount, payment_date, payment_method)
-        self.payments.append(payment)
-        self._save_payments()
+        payment_id = f"PAY{len(self.db_manager.get_all_payments()) + 1:04d}"
+        payment_date = datetime.now()
+        payment_data = {
+            'payment_id': payment_id,
+            'reservation_id': reservation_id,
+            'amount': amount,
+            'payment_date': payment_date,
+            'payment_method': payment_method,
+            'status': 'pending'
+        }
+        payment = self.db_manager.add_payment(payment_data)
         logger.info(f"Zarejestrowano płatność {payment_id} dla rezerwacji {reservation_id}. Kwota: {amount:.2f}.")
-
+        #faktura
         invoice = self.get_invoice_by_reservation_id(reservation_id)
         if invoice:
-            invoice.record_payment(amount)
-            self._save_invoices()
-            self.reservation_service.update_reservation(reservation_id, payment_status=invoice.status)
+            paid_amount = (invoice.paid_amount or 0) + amount
+            status = 'paid' if paid_amount >= invoice.total_amount else 'partially_paid'
+            self.db_manager.update_invoice(invoice.invoice_id, {'paid_amount': paid_amount, 'status': status})
+            self.reservation_service.update_reservation(reservation_id, payment_status=status)
             logger.info(f"Zaktualizowano fakturę {invoice.invoice_id} i status płatności rezerwacji {reservation_id}.")
+            #jak nie ma
         else:
             if amount >= reservation.total_price:
                 self.reservation_service.update_reservation(reservation_id, payment_status="paid")
@@ -77,46 +71,46 @@ class PaymentService:
             print(f"Błąd: Rezerwacja {reservation_id} nie znaleziono.")
             logger.warning(f"Próba wygenerowania faktury dla nieistniejącej rezerwacji: {reservation_id}")
             return None
-        
-        if any(invoice.reservation_id == reservation_id for invoice in self.invoices):
+        existing_invoices = self.db_manager.get_all_invoices()
+        if any(invoice.reservation_id == reservation_id for invoice in existing_invoices):
             print(f"Faktura dla rezerwacji {reservation_id} już istnieje. Zwracam istniejącą fakturę.")
-            existing_invoice = self.get_invoice_by_reservation_id(reservation_id)
+            existing_invoice = self.get_invoice_by_reservation_id(reservation_id)#pobieram istniejaca
             logger.info(f"Faktura dla rezerwacji {reservation_id} już istnieje ({existing_invoice.invoice_id}).")
-            return existing_invoice
+            return existing_invoice #zwracam istniejaca fakture
 
-        invoice_id_num = len(self.invoices) + 1
-        invoice_id = f"INV{invoice_id_num:04d}"
-        issue_date = datetime.now().strftime("%Y-%m-%d")
-        due_date = (datetime.now() + timedelta(days=7)).strftime("%Y-%m-%d") 
+        invoice_id_num = len(existing_invoices) + 1#licze faktury
+        invoice_id = f"INV{invoice_id_num:04d}"#id
+        issue_date = datetime.now()
+        due_date = datetime.now() + timedelta(days=7)
         total_amount = reservation.total_price
-
-        invoice = Invoice(invoice_id, reservation_id, reservation.guest_id, issue_date, due_date, total_amount)
-        invoice.add_line_item(f"Opłata za pokój (Pokój {reservation.room_number}, {reservation.check_in_date} do {reservation.check_out_date})", total_amount)
-
-        self.invoices.append(invoice)
-        self._save_invoices()
+        #dane faktury
+        invoice_data = {
+            'invoice_id': invoice_id,
+            'reservation_id': reservation_id,
+            'guest_id': reservation.guest_id,
+            'issue_date': issue_date,
+            'due_date': due_date,
+            'total_amount': total_amount,
+            'paid_amount': 0.0,
+            'status': 'pending',
+            'line_items': [
+                {'description': f"Opłata za pokój (Pokój {reservation.room_number}, {reservation.check_in.strftime('%Y-%m-%d')} do {reservation.check_out.strftime('%Y-%m-%d')})", 'amount': total_amount}
+            ]
+        }
+        invoice = self.db_manager.add_invoice(invoice_data)
         print(f"Faktura {invoice_id} wygenerowana dla rezerwacji {reservation_id}. Suma: {total_amount:.2f}.")
         logger.info(f"Wygenerowano fakturę {invoice_id} dla rezerwacji {reservation_id}. Suma: {total_amount:.2f}.")
         return invoice
 
     def get_payment(self, payment_id):
-        payment = next((p for p in self.payments if p.payment_id == payment_id), None)
-        if payment:
-            logger.debug(f"Pobrano płatność: {payment_id}")
-        else:
-            logger.debug(f"Nie znaleziono płatności: {payment_id}")
-        return payment
+        return self.db_manager.get_payment(payment_id)
 
     def get_invoice(self, invoice_id):
-        invoice = next((i for i in self.invoices if i.invoice_id == invoice_id), None)
-        if invoice:
-            logger.debug(f"Pobrano fakturę: {invoice_id}")
-        else:
-            logger.debug(f"Nie znaleziono faktury: {invoice_id}")
-        return invoice
-    
+        return self.db_manager.get_invoice(invoice_id)
+
     def get_invoice_by_reservation_id(self, reservation_id):
-        invoice = next((i for i in self.invoices if i.reservation_id == reservation_id), None)
+        invoices = self.db_manager.get_all_invoices()
+        invoice = next((i for i in invoices if i.reservation_id == reservation_id), None)#szukam 1 faktury gdzie id sie zgadza
         if invoice:
             logger.debug(f"Pobrano fakturę dla rezerwacji: {reservation_id}")
         else:
@@ -138,8 +132,8 @@ class PaymentService:
 ID Faktury: {invoice.invoice_id}
 ID Rezerwacji: {invoice.reservation_id}
 ID Gościa: {invoice.guest_id}
-Data Wystawienia: {invoice.issue_date}
-Termin Płatności: {invoice.due_date}
+Data Wystawienia: {invoice.issue_date.strftime('%Y-%m-%d') if invoice.issue_date else 'N/A'}
+Termin Płatności: {invoice.due_date.strftime('%Y-%m-%d') if invoice.due_date else 'N/A'}
 --------------------------------------------------
 Pozycje Faktury:
 """
@@ -184,8 +178,8 @@ Status Płatności: {REVERSE_INVOICE_STATUS_MAPPING.get(invoice.status, invoice.
                 ["ID Faktury:", invoice.invoice_id],
                 ["ID Rezerwacji:", invoice.reservation_id],
                 ["ID Gościa:", invoice.guest_id],
-                ["Data Wystawienia:", invoice.issue_date],
-                ["Termin Płatności:", invoice.due_date]
+                ["Data Wystawienia:", invoice.issue_date.strftime('%Y-%m-%d') if invoice.issue_date else 'N/A'],
+                ["Termin Płatności:", invoice.due_date.strftime('%Y-%m-%d') if invoice.due_date else 'N/A']
             ]
             info_table = Table(invoice_info, colWidths=[5*cm, 10*cm])
             info_table.setStyle(TableStyle([
@@ -203,7 +197,6 @@ Status Płatności: {REVERSE_INVOICE_STATUS_MAPPING.get(invoice.status, invoice.
             line_items = [["Opis", "Kwota (PLN)"]]
             for item in invoice.line_items:
                 line_items.append([item['description'], f"{item['amount']:.2f}"])
-            
             items_table = Table(line_items, colWidths=[12*cm, 3*cm])
             items_table.setStyle(TableStyle([
                 ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
@@ -249,23 +242,26 @@ Status Płatności: {REVERSE_INVOICE_STATUS_MAPPING.get(invoice.status, invoice.
             return False
 
     def list_all_payments(self):
-        if not self.payments:
+        payments = self.db_manager.get_all_payments()
+        if not payments:
             print("Brak zarejestrowanych płatności.")
             logger.info("Brak zarejestrowanych płatności do wyświetlenia.")
             return []
         logger.info("Wyświetlono wszystkie płatności.")
-        return self.payments
+        return payments
 
     def list_all_invoices(self):
-        if not self.invoices:
+        invoices = self.db_manager.get_all_invoices()
+        if not invoices:
             print("Brak wygenerowanych faktur.")
             logger.info("Brak wygenerowanych faktur do wyświetlenia.")
             return []
         logger.info("Wyświetlono wszystkie faktury.")
-        return self.invoices
+        return invoices
 
     def get_outstanding_invoices(self):
-        outstanding = [i for i in self.invoices if i.status in ["pending", "partially_paid"]]
+        invoices = self.db_manager.get_all_invoices()
+        outstanding = [i for i in invoices if i.status in ["pending", "partially_paid"]]
         if not outstanding:
             print("Brak nieuregulowanych faktur.")
             logger.info("Brak nieuregulowanych faktur.")

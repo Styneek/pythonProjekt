@@ -2563,3 +2563,1212 @@
 2025-06-19 14:43:14,685 - hotel_reservation_app - INFO - Użytkownik olek pomyślnie uwierzytelniony jako pokojówka.
 2025-06-19 14:43:16,314 - hotel_reservation_app - INFO - Użytkownik olek wchodzi do menu zarządzania sprzątaniem.
 2025-06-19 14:43:18,304 - hotel_reservation_app - INFO - Użytkownik olek opuszcza menu zarządzania sprzątaniem.
+2025-06-19 20:06:16,308 - hotel_reservation_app - INFO - RoomService zainicjowany.
+2025-06-19 20:06:16,308 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-19 20:06:16,309 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-19 20:06:16,309 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-19 20:06:16,309 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-19 20:06:16,309 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-19 20:06:16,310 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-19 20:06:16,310 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-19 20:06:21,428 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-19 20:06:24,711 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-19 20:06:26,030 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:29:24,480 - hotel_reservation_app - INFO - RoomService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:29:24,481 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:29:24,483 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:29:29,311 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:38:27,726 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:38:27,727 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:38:27,727 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:38:27,727 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:38:27,727 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:38:27,728 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:38:27,728 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:38:27,728 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:38:33,221 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:38:34,363 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:39:32,269 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:39:32,270 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:39:32,270 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:39:32,270 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:39:32,270 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:39:32,271 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:39:32,271 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:39:32,271 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:39:36,138 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:39:37,165 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:40:18,841 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:40:18,841 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:40:18,841 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:40:18,842 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:40:18,842 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:40:18,842 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:40:18,843 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:40:18,843 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:40:18,843 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:40:22,809 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:40:23,565 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:40:34,985 - hotel_reservation_app - INFO - Dodano pokój: 201
+2025-06-23 12:40:34,985 - hotel_reservation_app - INFO - Dodano nowy pokój: 201
+2025-06-23 12:40:36,173 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:40:36,174 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:46:45,313 - hotel_reservation_app - INFO - Zaktualizowano pokój: 1 z danymi: {'floor': 2, 'room_type': 'apartament', 'price': 1234.0, 'amenities': ['TV']}
+2025-06-23 12:46:45,314 - hotel_reservation_app - INFO - Zaktualizowano pokój: 1
+2025-06-23 12:46:46,850 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:46:46,851 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:47:09,470 - hotel_reservation_app - INFO - Zmieniono status pokoju 2 na zajęty
+2025-06-23 12:47:10,602 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:47:10,603 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:47:36,433 - hotel_reservation_app - INFO - Znaleziono 1 dostępnych pokoi.
+2025-06-23 12:47:36,434 - hotel_reservation_app - INFO - Wyświetlono dostępne pokoje.
+2025-06-23 12:48:09,791 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:48:09,791 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:48:09,791 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:48:09,791 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:48:09,792 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:48:09,792 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:48:09,792 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:48:09,792 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:48:09,792 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:48:15,360 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:48:18,061 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:48:32,462 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:48:32,463 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:48:32,463 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:48:32,463 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:48:32,463 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:48:32,464 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:48:32,464 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:48:32,464 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:48:32,464 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:48:37,889 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:48:39,000 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - GuestService zainicjowany.
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:50:53,738 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:50:53,739 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:50:53,739 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:50:53,739 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:50:59,013 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:51:00,083 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 12:51:00,646 - hotel_reservation_app - INFO - Brak pokoi w systemie do wyświetlenia.
+2025-06-23 12:51:00,647 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 12:57:35,995 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:57:35,995 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:57:35,995 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 12:57:35,995 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:57:35,996 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:57:35,996 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:57:35,996 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:57:35,996 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:57:35,996 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:57:41,894 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:57:46,174 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 12:58:19,743 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:58:19,743 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:58:19,743 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 12:58:19,744 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:58:19,744 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:58:19,744 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:58:19,744 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:58:19,745 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:58:19,745 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:58:34,918 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:58:34,918 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:58:34,918 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:58:34,919 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:58:41,235 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 12:58:41,235 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 12:58:41,235 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 12:58:41,235 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 12:58:41,236 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 12:58:41,236 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 12:58:41,236 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 12:58:41,236 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 12:58:41,237 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 12:58:45,404 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 12:58:46,426 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 12:58:47,153 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 12:59:24,613 - hotel_reservation_app - WARNING - Nieprawidłowy format e-maila podczas dodawania gościa: kamilstyn@gmail.com
+2025-06-23 12:59:25,633 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 12:59:31,228 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 12:59:35,348 - hotel_reservation_app - INFO - Dodano gościa:  -  
+2025-06-23 13:00:42,735 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:00:42,736 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:00:42,736 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:00:42,736 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:00:42,737 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:00:42,737 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:00:42,737 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:00:42,737 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:00:42,737 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:00:46,544 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:00:47,350 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:00:47,900 - hotel_reservation_app - INFO - Pobrano 1 gości z bazy.
+2025-06-23 13:00:47,901 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:00:52,997 - hotel_reservation_app - INFO - Usunięto gościa: 
+2025-06-23 13:00:54,259 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:00:54,259 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:01:25,556 - hotel_reservation_app - WARNING - Nieprawidłowy format e-maila podczas dodawania gościa: kamilstyn@gmail.com
+2025-06-23 13:01:26,523 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:01:26,523 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:01:32,536 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:01:32,537 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:16:21,380 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania gośćmi.
+2025-06-23 13:16:22,500 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 13:16:23,217 - hotel_reservation_app - INFO - Brak pokoi w systemie do wyświetlenia.
+2025-06-23 13:16:23,218 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:17:00,430 - hotel_reservation_app - INFO - Dodano pokój: 101
+2025-06-23 13:17:00,430 - hotel_reservation_app - INFO - Dodano nowy pokój: 101
+2025-06-23 13:17:01,546 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:17:01,547 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:18:21,665 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:18:21,665 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:18:21,665 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:18:21,666 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:18:21,666 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:18:21,666 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:18:21,667 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:18:21,667 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:18:21,667 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:18:25,317 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:18:26,054 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 13:19:04,199 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:19:04,199 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:19:04,199 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:19:04,199 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:19:04,200 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:19:04,200 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:19:04,200 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:19:04,200 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:19:04,200 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:19:08,530 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:19:09,532 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 13:19:16,520 - hotel_reservation_app - INFO - Dodano pokój: 102
+2025-06-23 13:19:16,520 - hotel_reservation_app - INFO - Dodano nowy pokój: 102
+2025-06-23 13:20:20,483 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:20:20,484 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:20:25,101 - hotel_reservation_app - INFO - Usunięto pokój: 101
+2025-06-23 13:20:25,101 - hotel_reservation_app - INFO - Próba usunięcia pokoju: 101
+2025-06-23 13:20:26,467 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:20:26,467 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:20:45,168 - hotel_reservation_app - INFO - Dodano pokój: 103
+2025-06-23 13:20:45,168 - hotel_reservation_app - INFO - Dodano nowy pokój: 103
+2025-06-23 13:20:46,317 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:20:46,318 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:21:20,981 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:21:20,982 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:21:20,982 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:21:20,982 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:21:25,270 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:21:26,154 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 13:21:43,880 - hotel_reservation_app - INFO - Zaktualizowano pokój: 103 z danymi: {'room_type': 'pojedynczy', 'price': 120.0, 'amenities': ['tv']}
+2025-06-23 13:21:43,881 - hotel_reservation_app - INFO - Zaktualizowano pokój: 103
+2025-06-23 13:21:45,198 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:21:45,199 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:21:56,036 - hotel_reservation_app - INFO - Zmieniono status pokoju 103 na zajęty
+2025-06-23 13:21:57,230 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:21:57,231 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:22:56,414 - hotel_reservation_app - INFO - Znaleziono 1 dostępnych pokoi.
+2025-06-23 13:22:56,415 - hotel_reservation_app - INFO - Wyświetlono dostępne pokoje.
+2025-06-23 13:24:22,440 - hotel_reservation_app - INFO - Brak pokoi spełniających kryteria wyszukiwania (typ: podwójny, cena: 200.0-500.0, udogodnienie: None, status: available).
+2025-06-23 13:24:22,440 - hotel_reservation_app - INFO - Wykonano wyszukiwanie pokoi.
+2025-06-23 13:25:33,697 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:25:33,697 - hotel_reservation_app - INFO - Posortowano pokoje według price (odwrócone: False).
+2025-06-23 13:32:27,070 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 13:32:27,070 - hotel_reservation_app - INFO - Posortowano pokoje według room_type (odwrócone: False).
+2025-06-23 13:33:05,611 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:33:24,099 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:33:24,100 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:33:24,100 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:33:24,100 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:33:28,035 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:33:30,471 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:33:55,274 - hotel_reservation_app - WARNING - Nieprawidłowy format e-maila podczas dodawania gościa: kamilstyn@gmail.com
+2025-06-23 13:34:01,578 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:34:01,579 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:34:26,682 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:34:26,682 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:34:26,682 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:34:26,682 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:34:26,683 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:34:26,683 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:34:26,683 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:34:26,683 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:34:26,684 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:34:31,230 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:34:32,417 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:34:34,035 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:34:34,035 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:34:58,985 - hotel_reservation_app - WARNING - Nieprawidłowy format e-maila podczas dodawania gościa: kamilstyn@gmail.com
+2025-06-23 13:36:24,500 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:36:24,500 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:36:24,501 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:36:24,502 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:36:30,041 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:36:32,444 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:36:33,867 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:36:33,867 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:36:53,266 - hotel_reservation_app - WARNING - Nieprawidłowy format e-maila podczas dodawania gościa: kamilstyn@gmail.com
+2025-06-23 13:37:21,678 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:37:21,678 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:37:21,678 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:37:21,678 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:37:21,679 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:37:21,679 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:37:21,679 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:37:21,679 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:37:21,679 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:37:25,627 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:37:26,613 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:37:27,981 - hotel_reservation_app - INFO - Pobrano 0 gości z bazy.
+2025-06-23 13:37:27,981 - hotel_reservation_app - INFO - Brak gości w systemie do wyświetlenia.
+2025-06-23 13:37:49,412 - hotel_reservation_app - INFO - Dodano gościa: 1 - Kamil Styn
+2025-06-23 13:37:51,536 - hotel_reservation_app - INFO - Pobrano 1 gości z bazy.
+2025-06-23 13:37:51,536 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:38:41,138 - hotel_reservation_app - INFO - Pobrano 1 gości z bazy.
+2025-06-23 13:38:41,138 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:39:34,577 - hotel_reservation_app - INFO - Zaktualizowano gościa: 1 z danymi: {'id_document': '2137', 'contact_info': {'email': 'kamilstyn@gmail.com', 'phone': '123456789'}, 'is_loyal_customer': True, 'preferences': ['brak']}
+2025-06-23 13:39:35,604 - hotel_reservation_app - INFO - Pobrano 1 gości z bazy.
+2025-06-23 13:39:35,604 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:41:58,668 - hotel_reservation_app - INFO - Dodano gościa: 2 - Franek Kimono
+2025-06-23 13:42:00,026 - hotel_reservation_app - INFO - Pobrano 2 gości z bazy.
+2025-06-23 13:42:00,026 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:47:21,298 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 13:47:21,298 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 13:47:21,298 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 13:47:21,298 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 13:47:21,298 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 13:47:21,299 - hotel_reservation_app - INFO - ReservationService zainicjowany.
+2025-06-23 13:47:21,299 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 13:47:21,299 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 13:47:21,299 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 13:47:28,453 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 13:47:52,932 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 13:48:14,632 - hotel_reservation_app - INFO - Dodano gościa: 3 - Zuzia Nowak
+2025-06-23 13:48:18,721 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 13:48:18,721 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:48:46,851 - hotel_reservation_app - INFO - Zaktualizowano gościa: 3 z danymi: {'id_document': '1234', 'contact_info': {'phone': '09898098', 'email': 'zuzka@gmail.com'}}
+2025-06-23 13:48:48,188 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 13:48:48,189 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:50:39,259 - hotel_reservation_app - INFO - Poziom lojalności gościa 3 zaktualizowany z Bronze na Silver.
+2025-06-23 13:50:39,265 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 3
+2025-06-23 13:51:20,156 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 3
+2025-06-23 13:52:56,455 - hotel_reservation_app - INFO - Znaleziono 1 gości spełniających kryteria wyszukiwania (ID: 3, Imię: None, Nazwisko: None, VIP: None, Lojalny: None, Poziom: None, Kontakt: None).
+2025-06-23 13:53:43,947 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 13:53:43,947 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:53:43,947 - hotel_reservation_app - INFO - Posortowano gości według first_name (odwrócone: False).
+2025-06-23 13:53:51,792 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 13:53:51,792 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 13:53:51,792 - hotel_reservation_app - INFO - Posortowano gości według last_name (odwrócone: False).
+2025-06-23 13:54:23,633 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania gośćmi.
+2025-06-23 14:05:10,926 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:05:10,926 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:05:10,926 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:05:10,927 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:05:10,927 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:05:10,927 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:05:10,927 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:05:10,928 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:05:10,928 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:05:16,557 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:05:26,926 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:05:27,862 - hotel_reservation_app - INFO - Brak rezerwacji w systemie do wyświetlenia.
+2025-06-23 14:05:47,704 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 103 nie jest dostępny (status: zajęty).
+2025-06-23 14:05:47,704 - hotel_reservation_app - INFO - Pokój 103 niedostępny w wybranym terminie (2025-05-05 do 2025-05-12).
+2025-06-23 14:05:56,400 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:05:57,662 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:05:58,230 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:05:58,230 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:06:04,565 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:06:13,225 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:06:15,050 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:06:16,287 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:06:16,288 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:06:22,535 - hotel_reservation_app - INFO - Zmieniono status pokoju 103 na dostępny
+2025-06-23 14:06:25,469 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:06:33,370 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:06:33,370 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:06:33,370 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:06:33,371 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:06:37,934 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:06:40,158 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:06:57,238 - hotel_reservation_app - INFO - Pokój 102 jest dostępny w terminie 2025-05-05 do 2025-05-12.
+2025-06-23 14:06:57,238 - hotel_reservation_app - INFO - Znaleziono 3 rabatów spełniających kryteria.
+2025-06-23 14:06:57,253 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na zajęty
+2025-06-23 14:06:57,254 - hotel_reservation_app - INFO - Poziom lojalności gościa 1 zaktualizowany z Bronze na Silver.
+2025-06-23 14:06:57,260 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 1
+2025-06-23 14:06:57,260 - hotel_reservation_app - INFO - Utworzono rezerwację RES0001 dla pokoju 102 i gościa 1. Całkowita cena: 15554.00.
+2025-06-23 14:07:11,780 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:08:02,704 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:08:02,704 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:08:02,704 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:08:02,705 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:08:08,462 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:08:11,669 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:26:02,537 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:26:02,537 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:26:02,537 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:26:02,537 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:26:02,538 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:26:02,538 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:26:02,538 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:26:02,538 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:26:02,538 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:26:08,250 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:26:09,802 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:26:34,875 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:26:34,875 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:26:34,876 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:26:34,877 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:26:39,087 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:27:50,980 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:27:50,980 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:27:50,980 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:27:50,980 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:27:50,980 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:27:50,981 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:27:50,981 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:27:50,981 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:27:50,981 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:27:55,196 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:27:57,114 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:28:04,783 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:28:04,783 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:28:04,783 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:28:04,783 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:28:04,784 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:28:04,784 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:28:04,784 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:28:04,784 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:28:04,785 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:28:09,204 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:28:24,494 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:28:38,661 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 102 nie jest dostępny (status: zajęty).
+2025-06-23 14:28:38,661 - hotel_reservation_app - INFO - Pokój 102 niedostępny w wybranym terminie (2025-05-05 do 2025-05-12).
+2025-06-23 14:29:04,584 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 102 nie jest dostępny (status: zajęty).
+2025-06-23 14:29:04,585 - hotel_reservation_app - INFO - Pokój 102 niedostępny w wybranym terminie (2023-04-04 do 2023-04-08).
+2025-06-23 14:29:11,959 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:29:12,879 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:29:13,953 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:29:13,954 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:30:12,921 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:30:12,921 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:30:12,922 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:30:12,923 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:30:17,250 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:30:18,196 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:30:18,977 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:30:18,978 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:30:24,619 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na dostępny
+2025-06-23 14:30:25,868 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:30:25,870 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:30:32,190 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 14:30:33,374 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 14:30:33,374 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 14:30:36,084 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania gośćmi.
+2025-06-23 14:30:37,955 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:33:03,227 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:33:03,228 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:33:03,228 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:33:03,228 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:33:07,021 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:33:08,636 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:33:09,939 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:34:36,657 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:34:36,657 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:34:36,657 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:34:36,658 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:34:41,476 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:34:43,306 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:34:44,820 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:35:17,980 - hotel_reservation_app - INFO - Zaktualizowano rezerwację: RES0001 z danymi: {'check_in_date': '2025-05-06', 'check_out_date': '2025-05-13'}
+2025-06-23 14:35:20,056 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:45:40,881 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na zajęty
+2025-06-23 14:45:40,882 - hotel_reservation_app - INFO - Zaktualizowano status pokoju 102 na 'zajęty' podczas zameldowania rezerwacji RES0001.
+2025-06-23 14:45:40,882 - hotel_reservation_app - INFO - Zameldowano gościa dla Rezerwacji RES0001 do Pokoju 102.
+2025-06-23 14:45:43,914 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:46:15,856 - hotel_reservation_app - INFO - Pokój 103 jest dostępny w terminie 2022-03-04 do 2022-03-12.
+2025-06-23 14:46:15,856 - hotel_reservation_app - INFO - Znaleziono 2 rabatów spełniających kryteria.
+2025-06-23 14:46:15,868 - hotel_reservation_app - INFO - Zmieniono status pokoju 103 na zajęty
+2025-06-23 14:46:15,870 - hotel_reservation_app - INFO - Poziom lojalności gościa 2 zaktualizowany z Bronze na Silver.
+2025-06-23 14:46:15,875 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 2
+2025-06-23 14:46:15,876 - hotel_reservation_app - INFO - Utworzono rezerwację RES0002 dla pokoju 103 i gościa 2. Całkowita cena: 960.00.
+2025-06-23 14:46:17,062 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:46:30,340 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:46:31,632 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:46:32,191 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:46:32,192 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:46:40,942 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:46:41,903 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:49:48,930 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 14:49:48,930 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 14:49:48,930 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 14:49:48,930 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 14:49:48,930 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 14:49:48,931 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 14:49:48,931 - hotel_reservation_app - INFO - PaymentService zainicjowany.
+2025-06-23 14:49:48,931 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 14:49:48,931 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 14:49:52,972 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 14:49:53,943 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:49:54,589 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:50:22,672 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 103 nie jest dostępny (status: zajęty).
+2025-06-23 14:50:22,672 - hotel_reservation_app - INFO - Pokój 103 niedostępny w wybranym terminie (2023-05-05 do 2023-05-14).
+2025-06-23 14:50:40,957 - hotel_reservation_app - WARNING - Próba utworzenia rezerwacji dla nieistniejącego gościa: 
+2025-06-23 14:50:43,641 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:50:44,633 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:50:45,453 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:50:45,455 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:51:19,973 - hotel_reservation_app - INFO - Dodano pokój: 104
+2025-06-23 14:51:19,974 - hotel_reservation_app - INFO - Dodano nowy pokój: 104
+2025-06-23 14:51:23,203 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:51:23,204 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:51:27,151 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:51:28,213 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:51:36,002 - hotel_reservation_app - ERROR - Błąd formatu daty podczas tworzenia rezerwacji: ,  - time data '' does not match format '%Y-%m-%d'
+2025-06-23 14:52:02,721 - hotel_reservation_app - INFO - Pokój 104 jest dostępny w terminie 2022-02-02 do 2022-02-05.
+2025-06-23 14:52:02,722 - hotel_reservation_app - INFO - Znaleziono 2 rabatów spełniających kryteria.
+2025-06-23 14:52:02,736 - hotel_reservation_app - INFO - Zmieniono status pokoju 104 na zajęty
+2025-06-23 14:52:02,737 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 3
+2025-06-23 14:52:02,737 - hotel_reservation_app - INFO - Utworzono rezerwację RES0003 dla pokoju 104 i gościa 3. Całkowita cena: 15000.00.
+2025-06-23 14:52:04,227 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:53:26,510 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na sprzątanie
+2025-06-23 14:53:26,512 - hotel_reservation_app - INFO - Utworzono zadanie sprzątania: HKT0007 dla pokoju 102, przypisane do Nieprzypisane, termin: 2025-05-12.
+2025-06-23 14:53:26,513 - hotel_reservation_app - INFO - Utworzono zadanie sprzątania dla pokoju 102 po wymeldowaniu rezerwacji RES0001.
+2025-06-23 14:53:26,519 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na dostępny
+2025-06-23 14:53:26,520 - hotel_reservation_app - INFO - Wymeldowano gościa dla Rezerwacji RES0001 z Pokoju 102.
+2025-06-23 14:53:31,861 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:53:35,719 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:53:36,974 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:53:38,010 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:53:38,011 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:53:55,131 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:53:55,646 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:54:18,377 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 104 nie jest dostępny (status: zajęty).
+2025-06-23 14:55:16,340 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 14:55:17,898 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 14:55:18,741 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:55:18,742 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 14:55:29,576 - hotel_reservation_app - INFO - Zmieniono status pokoju 104 na dostępny
+2025-06-23 14:55:35,103 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 14:55:52,825 - hotel_reservation_app - INFO - Pokój 104 jest dostępny w terminie 2021-01-01 do 2021-02-02.
+2025-06-23 14:56:03,332 - hotel_reservation_app - INFO - Znaleziono 1 rezerwacji spełniających kryteria wyszukiwania (ID: None, Gość: 1, Pokój: None, Status: None, Status płatności: None, Zakres dat: None).
+2025-06-23 14:58:32,801 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 14:58:32,802 - hotel_reservation_app - INFO - Posortowano rezerwacje według guest_id (odwrócone: False).
+2025-06-23 15:00:39,554 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 15:05:08,417 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 15:05:08,417 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 15:05:08,417 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 15:05:08,418 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 15:05:08,418 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 15:05:08,418 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 15:05:08,418 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 15:05:08,418 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 15:05:08,419 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 15:05:12,517 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 15:05:14,073 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 15:05:25,994 - hotel_reservation_app - INFO - Zarejestrowano płatność PAY0001 dla rezerwacji RES0001. Kwota: 5000.00.
+2025-06-23 15:05:26,003 - hotel_reservation_app - INFO - Zaktualizowano rezerwację: RES0001 z danymi: {'payment_status': 'partially_paid'}
+2025-06-23 15:05:26,003 - hotel_reservation_app - INFO - Rezerwacja RES0001 oznaczona jako częściowo opłacona (bez faktury).
+2025-06-23 15:05:28,010 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 15:05:31,696 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 15:05:32,947 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 15:05:33,857 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 15:06:42,829 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 15:06:44,576 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 15:06:53,092 - hotel_reservation_app - INFO - Wygenerowano fakturę INV0001 dla rezerwacji RES0001. Suma: 15554.00.
+2025-06-23 15:07:24,723 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 15:07:27,434 - hotel_reservation_app - INFO - Wyświetlono wszystkie faktury.
+2025-06-23 15:07:52,316 - hotel_reservation_app - INFO - Zarejestrowano płatność PAY0002 dla rezerwacji RES0001. Kwota: 20000.00.
+2025-06-23 15:08:55,805 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 15:08:55,805 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 15:08:55,805 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 15:08:55,806 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 15:08:59,702 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 15:09:01,176 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 15:09:04,135 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 15:09:06,481 - hotel_reservation_app - INFO - Wyświetlono wszystkie faktury.
+2025-06-23 15:09:19,893 - hotel_reservation_app - INFO - Zarejestrowano płatność PAY0003 dla rezerwacji RES0001. Kwota: 20000.00.
+2025-06-23 15:09:19,910 - hotel_reservation_app - INFO - Zaktualizowano rezerwację: RES0001 z danymi: {'payment_status': 'paid'}
+2025-06-23 15:09:19,912 - hotel_reservation_app - INFO - Zaktualizowano fakturę INV0001 i status płatności rezerwacji RES0001.
+2025-06-23 15:09:22,890 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 15:09:25,255 - hotel_reservation_app - INFO - Wyświetlono wszystkie faktury.
+2025-06-23 15:16:24,960 - hotel_reservation_app - INFO - Brak nieuregulowanych faktur.
+2025-06-23 15:16:34,480 - hotel_reservation_app - INFO - Wygenerowano fakturę INV0002 dla rezerwacji RES0002. Suma: 960.00.
+2025-06-23 15:16:40,798 - hotel_reservation_app - INFO - Znaleziono 1 nieuregulowanych faktur.
+2025-06-23 15:17:13,360 - hotel_reservation_app - INFO - Zapisano fakturę INV0001 do pliku PDF: invoice_INV0001.pdf
+2025-06-23 15:22:11,451 - hotel_reservation_app - INFO - Zapisano fakturę INV0001 do pliku TXT: invoice_INV0001.txt
+2025-06-23 15:22:54,076 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 15:25:30,270 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 15:26:34,906 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 15:34:17,094 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 15:34:17,094 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 15:34:17,094 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 15:34:17,094 - hotel_reservation_app - INFO - HousekeepingService zainicjowany.
+2025-06-23 15:34:17,094 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 15:34:17,095 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 15:34:17,095 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 15:34:17,095 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 15:34:17,095 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 15:34:21,514 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 15:34:23,602 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 15:34:26,451 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 15:34:28,072 - hotel_reservation_app - INFO - Wyświetlono wszystkie faktury.
+2025-06-23 15:34:35,850 - hotel_reservation_app - INFO - Znaleziono 1 nieuregulowanych faktur.
+2025-06-23 15:35:22,340 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 15:39:43,549 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 15:39:43,550 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 15:39:43,550 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 15:39:49,650 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 15:39:57,139 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania sprzątaniem.
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - DiscountService zainicjowany.
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 15:40:58,445 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 15:40:58,447 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 15:40:58,447 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 15:41:02,888 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 15:41:08,136 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania sprzątaniem.
+2025-06-23 15:41:09,744 - hotel_reservation_app - INFO - Brak zadań sprzątania w systemie do wyświetlenia.
+2025-06-23 15:41:36,643 - hotel_reservation_app - INFO - Utworzono zadanie sprzątania: HKT0001 dla pokoju 102, przypisane do Klaudia, termin: 2025-06-23.
+2025-06-23 15:41:39,044 - hotel_reservation_app - INFO - Wyświetlono wszystkie zadania sprzątania.
+2025-06-23 15:42:10,978 - hotel_reservation_app - INFO - Zaktualizowano status zadania sprzątania HKT0001 na completed.
+2025-06-23 15:42:13,189 - hotel_reservation_app - INFO - Wyświetlono wszystkie zadania sprzątania.
+2025-06-23 15:45:57,507 - hotel_reservation_app - INFO - Przypisano zadanie sprzątania HKT0001 do Igor.
+2025-06-23 15:46:01,217 - hotel_reservation_app - INFO - Wyświetlono wszystkie zadania sprzątania.
+2025-06-23 15:46:15,593 - hotel_reservation_app - INFO - Brak zaplanowanych zadań sprzątania na 2025-06-23.
+2025-06-23 15:46:37,328 - hotel_reservation_app - INFO - Utworzono zadanie sprzątania: HKT0002 dla pokoju 102, przypisane do Iza, termin: 2025-05-05.
+2025-06-23 15:46:47,678 - hotel_reservation_app - INFO - Wygenerowano harmonogram sprzątania na 2025-05-05. Znaleziono 1 zadań.
+2025-06-23 15:49:58,966 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania sprzątaniem.
+2025-06-23 15:50:00,490 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 15:50:01,944 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 15:50:01,945 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 15:50:14,748 - hotel_reservation_app - INFO - Zmieniono status pokoju 104 na sprzątanie
+2025-06-23 15:50:19,603 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania sprzątaniem.
+2025-06-23 15:50:41,775 - hotel_reservation_app - INFO - Utworzono zadanie sprzątania: HKT0003 dla pokoju 104, przypisane do Zosia, termin: 2025-04-04.
+2025-06-23 15:50:58,119 - hotel_reservation_app - INFO - Zaktualizowano status zadania sprzątania HKT0003 na completed.
+2025-06-23 15:50:59,609 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania sprzątaniem.
+2025-06-23 15:51:00,638 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 15:51:01,688 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 15:51:01,689 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 15:51:29,460 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania sprzątaniem.
+2025-06-23 15:51:31,667 - hotel_reservation_app - INFO - Wyświetlono wszystkie zadania sprzątania.
+2025-06-23 16:01:18,199 - hotel_reservation_app - INFO - Wygenerowano harmonogram sprzątania na 2025-05-05. Znaleziono 1 zadań.
+2025-06-23 16:01:53,194 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania sprzątaniem.
+2025-06-23 16:05:43,806 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:05:43,806 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:05:43,806 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:05:43,807 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:05:50,026 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:06:21,105 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:06:21,105 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:06:21,105 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:06:21,105 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:06:21,106 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:06:21,106 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:06:21,106 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:06:21,106 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:06:21,106 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:06:27,313 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:06:31,105 - hotel_reservation_app - INFO - Brak rabatów w systemie do wyświetlenia.
+2025-06-23 16:07:03,601 - hotel_reservation_app - INFO - Dodano rabat: DISC0001 (-500).
+2025-06-23 16:07:04,800 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:10:09,558 - hotel_reservation_app - INFO - Zaktualizowano rabat: DISC0001 (-500) z danymi: {'valid_from': '2025-05-05', 'valid_to': '2026-05-05'}
+2025-06-23 16:10:10,606 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:12:31,202 - hotel_reservation_app - INFO - Dodano rabat: DISC0002 (10%).
+2025-06-23 16:12:32,230 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:13:21,114 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: 2022-02-03, typ pokoju: None, gość: None, dni pobytu: 0, poziom lojalności: None).
+2025-06-23 16:13:39,968 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: None, typ pokoju: None, gość: None, dni pobytu: 0, poziom lojalności: None).
+2025-06-23 16:13:43,940 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:14:02,987 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: 2022-02-03, typ pokoju: None, gość: None, dni pobytu: 0, poziom lojalności: None).
+2025-06-23 16:14:49,446 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: 2022-02-04, typ pokoju: None, gość: None, dni pobytu: 2, poziom lojalności: None).
+2025-06-23 16:15:56,197 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: 2021-01-01, typ pokoju: None, gość: None, dni pobytu: 0, poziom lojalności: None).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:16:59,740 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:17:05,809 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:17:16,438 - hotel_reservation_app - INFO - Brak rabatów spełniających kryteria (data: 2021-01-01, typ pokoju: None, gość: None, dni pobytu: 0, poziom lojalności: None).
+2025-06-23 16:18:26,202 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:18:26,202 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:18:26,202 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:18:26,202 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:18:26,203 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:18:26,203 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:18:26,203 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:18:26,203 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:18:26,203 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:18:30,619 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:18:35,087 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:19:01,419 - hotel_reservation_app - INFO - Zaktualizowano rabat: DISC0002 (10%) z danymi: {'applicable_room_types': ['podwójny'], 'applicable_guest_ids': ['1'], 'is_active': True, 'applicable_loyalty_tiers': ['Gold']}
+2025-06-23 16:19:03,070 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:21:26,663 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 16:21:27,583 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:21:27,583 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:21:33,741 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:21:34,558 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:22:21,030 - hotel_reservation_app - INFO - Zaktualizowano rezerwację: RES0001 z danymi: {'status': 'checked_out', 'applied_discount_id': 'DISC0001'}
+2025-06-23 16:22:22,440 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:22:29,240 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:22:31,288 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 16:22:36,454 - hotel_reservation_app - INFO - Znaleziono 1 nieuregulowanych faktur.
+2025-06-23 16:22:40,142 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 16:22:46,371 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:22:47,937 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:23:32,065 - hotel_reservation_app - INFO - Zaktualizowano rezerwację: RES0002 z danymi: {'applied_discount_id': 'DESC0001'}
+2025-06-23 16:23:33,426 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:23:35,572 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:23:39,565 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania płatnościami.
+2025-06-23 16:23:50,524 - hotel_reservation_app - INFO - Faktura dla rezerwacji RES0002 już istnieje (INV0002).
+2025-06-23 16:23:55,476 - hotel_reservation_app - INFO - Wyświetlono wszystkie faktury.
+2025-06-23 16:24:18,849 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania płatnościami.
+2025-06-23 16:24:24,596 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 16:24:25,395 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:24:25,396 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:24:44,215 - hotel_reservation_app - INFO - Dodano pokój: 105
+2025-06-23 16:24:44,215 - hotel_reservation_app - INFO - Dodano nowy pokój: 105
+2025-06-23 16:24:45,381 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:24:45,382 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:24:48,541 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 16:24:50,507 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania gośćmi.
+2025-06-23 16:24:51,699 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:25:27,008 - hotel_reservation_app - INFO - Pokój 105 jest dostępny w terminie 2025-04-04 do 2025-04-14.
+2025-06-23 16:25:27,009 - hotel_reservation_app - WARNING - Podany kod rabatowy DESC0001 jest nieprawidłowy lub nie ma zastosowania dla rezerwacji RES0004.
+2025-06-23 16:25:27,027 - hotel_reservation_app - INFO - Zmieniono status pokoju 105 na zajęty
+2025-06-23 16:25:27,028 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 3
+2025-06-23 16:25:27,028 - hotel_reservation_app - INFO - Utworzono rezerwację RES0004 dla pokoju 105 i gościa 3. Całkowita cena: 25000.00.
+2025-06-23 16:25:29,416 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:26:30,619 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 105 nie jest dostępny (status: zajęty).
+2025-06-23 16:26:30,620 - hotel_reservation_app - INFO - Pokój 105 niedostępny w wybranym terminie (2023-03-03 do 2023-03-13).
+2025-06-23 16:26:32,452 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:29:06,605 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:29:06,606 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:29:09,915 - hotel_reservation_app - WARNING - Nieudana próba uwierzytelnienia dla użytkownika: admin
+2025-06-23 16:29:14,715 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:29:17,764 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:29:18,681 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:29:50,763 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 105 nie jest dostępny (status: zajęty).
+2025-06-23 16:29:50,763 - hotel_reservation_app - INFO - Pokój 105 niedostępny w wybranym terminie (2021-01-01 do 2021-01-11).
+2025-06-23 16:29:51,903 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:30:01,931 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:30:04,977 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:30:29,324 - hotel_reservation_app - INFO - Dodano rabat: DISC0003 (1500).
+2025-06-23 16:30:50,789 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 16:30:54,420 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:31:15,321 - hotel_reservation_app - INFO - Sprawdzanie dostępności: Pokój 105 nie jest dostępny (status: zajęty).
+2025-06-23 16:31:15,322 - hotel_reservation_app - INFO - Pokój 105 niedostępny w wybranym terminie (2020-01-01 do 2020-01-10).
+2025-06-23 16:31:16,393 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:31:51,914 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:31:52,971 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 16:31:54,211 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:31:54,211 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:32:05,104 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:32:25,718 - hotel_reservation_app - INFO - Pokój 102 jest dostępny w terminie 2020-01-01 do 2020-01-10.
+2025-06-23 16:32:25,718 - hotel_reservation_app - INFO - Zastosowano rabat 1500 dla rezerwacji RES0005. Zniżka: 1500.00 PLN.
+2025-06-23 16:32:25,733 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na zajęty
+2025-06-23 16:32:25,734 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 1
+2025-06-23 16:32:25,735 - hotel_reservation_app - INFO - Utworzono rezerwację RES0005 dla pokoju 102 i gościa 1. Całkowita cena: 18498.00.
+2025-06-23 16:32:27,338 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:34:23,275 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:34:23,276 - hotel_reservation_app - INFO - UserService zainicjowany.
+2025-06-23 16:34:26,491 - hotel_reservation_app - WARNING - Nieudana próba uwierzytelnienia dla użytkownika: admin
+2025-06-23 16:34:31,057 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:34:33,283 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:34:34,153 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:34:39,968 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:34:40,969 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 16:34:41,795 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:34:41,796 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:34:49,932 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na dostępny
+2025-06-23 16:34:51,579 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:34:51,580 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:34:57,994 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 16:35:19,891 - hotel_reservation_app - INFO - Pokój 102 jest dostępny w terminie 2022-09-09 do 2022-09-15.
+2025-06-23 16:35:19,893 - hotel_reservation_app - INFO - Zastosowano rabat 1500 dla rezerwacji RES0006. Zniżka: 1500.00 PLN.
+2025-06-23 16:35:19,907 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na zajęty
+2025-06-23 16:35:19,909 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 2
+2025-06-23 16:35:19,909 - hotel_reservation_app - INFO - Utworzono rezerwację RES0006 dla pokoju 102 i gościa 2. Całkowita cena: 11832.00.
+2025-06-23 16:35:20,956 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 16:35:48,903 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 16:37:29,902 - hotel_reservation_app - ERROR - Błąd formatu daty w generate_occupancy_report:  - time data '' does not match format '%Y-%m-%d'
+2025-06-23 16:41:51,110 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:41:51,111 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:41:51,126 - hotel_reservation_app - INFO - Dodano użytkownika: admin z rolą administrator.
+2025-06-23 16:41:51,126 - hotel_reservation_app - INFO - Domyślny użytkownik administratora został utworzony.
+2025-06-23 16:42:00,253 - hotel_reservation_app - WARNING - Nieudana próba uwierzytelnienia dla użytkownika: admin\
+2025-06-23 16:42:03,575 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:43:06,050 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:43:06,051 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:43:06,051 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:43:06,051 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:43:13,196 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:43:46,764 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:43:46,766 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:43:52,361 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:43:56,426 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-23 16:44:42,767 - hotel_reservation_app - INFO - Dodano użytkownika: kamil z rolą recepcjonista.
+2025-06-23 16:44:44,423 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-23 16:45:14,444 - hotel_reservation_app - INFO - Dodano użytkownika: kasia z rolą pokojówka.
+2025-06-23 16:45:15,427 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-23 16:45:28,379 - hotel_reservation_app - INFO - Zaktualizowano hasło użytkownika: kamil
+2025-06-23 16:46:01,583 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:46:01,583 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:46:01,583 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:46:01,584 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:46:06,919 - hotel_reservation_app - WARNING - Nieudana próba uwierzytelnienia dla użytkownika: admin
+2025-06-23 16:46:11,469 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 16:46:14,129 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-23 16:46:22,629 - hotel_reservation_app - INFO - Zaktualizowano hasło użytkownika: kasia
+2025-06-23 16:46:22,636 - hotel_reservation_app - INFO - Zaktualizowano użytkownika: kasia z danymi: {'password': 'kasia1'}
+2025-06-23 16:46:27,511 - hotel_reservation_app - WARNING - Próba usunięcia nieistniejącego użytkownika: 
+2025-06-23 16:46:35,759 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:46:35,760 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:46:38,567 - hotel_reservation_app - INFO - Użytkownik kamil pomyślnie uwierzytelniony jako recepcjonista.
+2025-06-23 16:46:42,661 - hotel_reservation_app - INFO - Użytkownik kamil wchodzi do menu zarządzania pokojami.
+2025-06-23 16:46:43,694 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:46:43,696 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 16:46:46,437 - hotel_reservation_app - INFO - Użytkownik kamil wchodzi do menu zarządzania gośćmi.
+2025-06-23 16:46:47,607 - hotel_reservation_app - INFO - Użytkownik kamil opuszcza menu zarządzania gośćmi.
+2025-06-23 16:46:56,214 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:46:56,214 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:46:56,215 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:46:58,876 - hotel_reservation_app - INFO - Użytkownik kasia pomyślnie uwierzytelniony jako pokojówka.
+2025-06-23 16:47:00,394 - hotel_reservation_app - INFO - Użytkownik kasia wchodzi do menu zarządzania sprzątaniem.
+2025-06-23 16:47:08,453 - hotel_reservation_app - INFO - Użytkownik kasia opuszcza menu zarządzania sprzątaniem.
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 16:58:59,498 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 16:58:59,499 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 16:58:59,499 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 16:58:59,499 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 16:59:03,097 - hotel_reservation_app - INFO - Użytkownik kamil pomyślnie uwierzytelniony jako recepcjonista.
+2025-06-23 16:59:05,221 - hotel_reservation_app - INFO - Użytkownik kamil wchodzi do menu zarządzania gośćmi.
+2025-06-23 16:59:06,923 - hotel_reservation_app - INFO - Pobrano 3 gości z bazy.
+2025-06-23 16:59:06,924 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 16:59:35,756 - hotel_reservation_app - INFO - Dodano gościa: 4 - Waldek Kowalski
+2025-06-23 16:59:37,600 - hotel_reservation_app - INFO - Pobrano 4 gości z bazy.
+2025-06-23 16:59:37,600 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 17:00:56,636 - hotel_reservation_app - INFO - Użytkownik kamil opuszcza menu zarządzania gośćmi.
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - ReportService zainicjowany.
+2025-06-23 17:01:03,360 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:01:08,653 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:02:36,034 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:02:36,034 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:02:36,035 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:02:36,035 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:02:36,035 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:02:36,035 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:02:36,035 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:02:36,036 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 17:02:36,036 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:02:39,752 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:02:49,302 - hotel_reservation_app - INFO - Generowanie raportu obłożenia dla daty: 2025-05-05
+2025-06-23 17:02:49,304 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:02:49,305 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:02:49,305 - hotel_reservation_app - INFO - Wygenerowano raport obłożenia dla 2025-05-05: 0/4 pokoi zajętych (0.00%).
+2025-06-23 17:03:13,957 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-23 17:03:16,027 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:03:23,068 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania rezerwacjami.
+2025-06-23 17:03:30,641 - hotel_reservation_app - INFO - Generowanie raportu obłożenia dla daty: 2022-09-09
+2025-06-23 17:03:30,641 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:03:30,642 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:03:30,642 - hotel_reservation_app - INFO - Wygenerowano raport obłożenia dla 2022-09-09: 1/4 pokoi zajętych (25.00%).
+2025-06-23 17:04:00,486 - hotel_reservation_app - INFO - Generowanie raportu przychodów od 2025-01-01 do 2025-09-09.
+2025-06-23 17:04:00,488 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 17:04:00,488 - hotel_reservation_app - INFO - Wygenerowano raport przychodów od 2025-01-01 do 2025-09-09. Całkowity przychód: 45000.00 PLN.
+2025-06-23 17:05:05,115 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:05:05,115 - hotel_reservation_app - INFO - Wygenerowano raport anulowanych rezerwacji dla okresu -. Znaleziono 0 anulowanych rezerwacji.
+2025-06-23 17:05:23,919 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2020-01-01
+2025-06-23 17:05:23,920 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:05:23,920 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2020-01-01: 1 przyjazdów, 0 wyjazdów.
+2025-06-23 17:05:59,540 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 17:05:59,541 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:06:04,806 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:06:14,564 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2020-01-01
+2025-06-23 17:06:14,566 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:06:14,566 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2020-01-01: 1 przyjazdów, 0 wyjazdów.
+2025-06-23 17:06:34,965 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2020-01-10
+2025-06-23 17:06:34,966 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:06:34,967 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2020-01-10: 0 przyjazdów, 1 wyjazdów.
+2025-06-23 17:07:00,358 - hotel_reservation_app - INFO - Generowanie raportu statystyk gości.
+2025-06-23 17:07:00,359 - hotel_reservation_app - INFO - Pobrano 4 gości z bazy.
+2025-06-23 17:07:00,359 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 17:07:00,359 - hotel_reservation_app - INFO - Pomyślnie wygenerowano raport statystyk gości.
+2025-06-23 17:08:25,077 - hotel_reservation_app - INFO - Generowanie raportu zadań sprzątania.
+2025-06-23 17:08:25,078 - hotel_reservation_app - INFO - Wyświetlono wszystkie zadania sprzątania.
+2025-06-23 17:08:25,078 - hotel_reservation_app - INFO - Pomyślnie wygenerowano raport zadań sprzątania.
+2025-06-23 17:10:05,591 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:10:05,591 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:10:05,591 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:10:05,591 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:10:05,592 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:10:05,592 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:10:05,592 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:10:05,592 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 17:10:05,592 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:10:11,223 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:10:15,669 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:10:15,669 - hotel_reservation_app - INFO - Generowanie wizualizacji obłożenia pokoi według typu.
+2025-06-23 17:10:39,754 - hotel_reservation_app - INFO - Wizualizacja obłożenia pokoi według typu została wygenerowana i wyświetlona.
+2025-06-23 17:16:03,238 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:16:03,239 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 17:16:03,240 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:16:08,270 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:16:39,372 - hotel_reservation_app - INFO - Generowanie raportu obłożenia dla daty: 2025-05-05
+2025-06-23 17:16:39,373 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:16:39,375 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:16:39,375 - hotel_reservation_app - INFO - Wygenerowano raport obłożenia dla 2025-05-05: 0/4 pokoi zajętych (0.00%).
+2025-06-23 17:16:41,537 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_oblozenia_2025-05-05.txt
+2025-06-23 17:17:10,776 - hotel_reservation_app - INFO - Generowanie raportu obłożenia dla daty: 2025-05-06
+2025-06-23 17:17:10,776 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:17:10,777 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:17:10,777 - hotel_reservation_app - INFO - Wygenerowano raport obłożenia dla 2025-05-06: 0/4 pokoi zajętych (0.00%).
+2025-06-23 17:17:20,035 - hotel_reservation_app - INFO - Generowanie raportu obłożenia dla daty: 2025-06-06
+2025-06-23 17:17:20,036 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 17:17:20,036 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:17:20,036 - hotel_reservation_app - INFO - Wygenerowano raport obłożenia dla 2025-06-06: 0/4 pokoi zajętych (0.00%).
+2025-06-23 17:17:21,703 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_oblozenia_2025-06-06.txt
+2025-06-23 17:18:11,500 - hotel_reservation_app - INFO - Generowanie raportu przychodów od 2025-01-01 do 2025-09-09.
+2025-06-23 17:18:11,502 - hotel_reservation_app - INFO - Wyświetlono wszystkie płatności.
+2025-06-23 17:18:11,502 - hotel_reservation_app - INFO - Wygenerowano raport przychodów od 2025-01-01 do 2025-09-09. Całkowity przychód: 45000.00 PLN.
+2025-06-23 17:18:13,484 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_przychodow_2025-01-01_do_2025-09-09.txt
+2025-06-23 17:18:39,597 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:18:39,597 - hotel_reservation_app - INFO - Wygenerowano raport anulowanych rezerwacji dla okresu 2025-01-01-2025-09-09. Znaleziono 0 anulowanych rezerwacji.
+2025-06-23 17:18:40,863 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_anulowanych_rezerwacji.txt
+2025-06-23 17:19:21,083 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2025-05-05
+2025-06-23 17:19:21,083 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:19:21,084 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2025-05-05: 0 przyjazdów, 0 wyjazdów.
+2025-06-23 17:20:18,026 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 17:20:18,026 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 17:20:18,026 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 17:20:18,026 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 17:20:18,026 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 17:20:18,027 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 17:20:18,027 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 17:20:18,027 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 17:20:18,027 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 17:20:22,982 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 17:20:32,806 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2025-05-05
+2025-06-23 17:20:32,808 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:20:32,808 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2025-05-05: 0 przyjazdów, 0 wyjazdów.
+2025-06-23 17:20:40,155 - hotel_reservation_app - INFO - Generowanie raportu statystyk gości.
+2025-06-23 17:20:40,158 - hotel_reservation_app - INFO - Pobrano 4 gości z bazy.
+2025-06-23 17:20:40,158 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 17:20:40,158 - hotel_reservation_app - INFO - Pomyślnie wygenerowano raport statystyk gości.
+2025-06-23 17:20:49,995 - hotel_reservation_app - INFO - Generowanie raportu przyjazdów i wyjazdów dla daty: 2025-05-05
+2025-06-23 17:20:49,995 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-23 17:20:49,996 - hotel_reservation_app - INFO - Wygenerowano raport przyjazdów i wyjazdów dla 2025-05-05: 0 przyjazdów, 0 wyjazdów.
+2025-06-23 17:20:51,592 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_przyjazdow_wyjazdow_2025-05-05.txt
+2025-06-23 17:21:07,204 - hotel_reservation_app - INFO - Generowanie raportu statystyk gości.
+2025-06-23 17:21:07,205 - hotel_reservation_app - INFO - Pobrano 4 gości z bazy.
+2025-06-23 17:21:07,205 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 17:21:07,205 - hotel_reservation_app - INFO - Pomyślnie wygenerowano raport statystyk gości.
+2025-06-23 17:21:10,786 - hotel_reservation_app - INFO - Raport został pomyślnie wyeksportowany do pliku raport_statystyk_gosci.txt
+2025-06-23 18:49:17,034 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 18:49:17,034 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 18:49:17,034 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 18:49:17,034 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 18:49:17,035 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 18:49:17,035 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 18:49:17,035 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 18:49:17,035 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 18:49:17,035 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 18:49:20,891 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 18:49:27,418 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-23 18:49:33,469 - hotel_reservation_app - ERROR - Błąd podczas dodawania pokoju (ValueError): invalid literal for int() with base 10: ''
+2025-06-23 18:49:34,689 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 18:49:34,691 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 18:49:45,775 - hotel_reservation_app - INFO - Dodano pokój: 106
+2025-06-23 18:49:45,775 - hotel_reservation_app - INFO - Dodano nowy pokój: 106
+2025-06-23 18:49:47,628 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 18:49:47,629 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:23,323 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:23,324 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:24,589 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:24,590 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:29,520 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:29,521 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-23 19:14:42,544 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania gośćmi.
+2025-06-23 19:14:47,784 - hotel_reservation_app - INFO - Dodano gościa:  -  
+2025-06-23 19:14:55,659 - hotel_reservation_app - INFO - Pobrano 5 gości z bazy.
+2025-06-23 19:14:55,660 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 19:15:04,742 - hotel_reservation_app - INFO - Usunięto gościa: 
+2025-06-23 19:15:07,717 - hotel_reservation_app - INFO - Pobrano 4 gości z bazy.
+2025-06-23 19:15:07,717 - hotel_reservation_app - INFO - Wyświetlono wszystkich gości.
+2025-06-23 19:16:04,397 - hotel_reservation_app - INFO - Użytkownik admin opuszcza menu zarządzania gośćmi.
+2025-06-23 19:16:16,587 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 19:16:30,217 - hotel_reservation_app - INFO - Dodano rabat: DISC0004 (2000).
+2025-06-23 19:16:32,566 - hotel_reservation_app - INFO - Wyświetlono wszystkie rabaty.
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - DatabaseManager initialized.
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-23 22:23:16,192 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-23 22:23:16,193 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-23 22:23:24,334 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-23 22:23:31,877 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-24 13:16:19,847 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-24 13:16:19,847 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-24 13:16:19,847 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-24 13:16:19,848 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-24 13:16:26,758 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-24 13:16:27,491 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-24 13:16:28,079 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:16:28,080 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:16:31,985 - hotel_reservation_app - WARNING - Próba dodania istniejącego pokoju: 106
+2025-06-24 13:20:26,031 - hotel_reservation_app - INFO - Usunięto pokój: 106
+2025-06-24 13:20:26,031 - hotel_reservation_app - INFO - Próba usunięcia pokoju: 106
+2025-06-24 13:20:27,418 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:20:27,419 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:31:47,874 - hotel_reservation_app - INFO - Brak dostępnych pokoi do znalezienia.
+2025-06-24 13:31:47,874 - hotel_reservation_app - INFO - Wyświetlono dostępne pokoje.
+2025-06-24 13:32:08,786 - hotel_reservation_app - INFO - Dodano pokój: 106
+2025-06-24 13:32:08,786 - hotel_reservation_app - INFO - Dodano nowy pokój: 106
+2025-06-24 13:32:10,228 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:32:10,229 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-24 13:32:12,518 - hotel_reservation_app - INFO - Znaleziono 1 dostępnych pokoi.
+2025-06-24 13:32:12,519 - hotel_reservation_app - INFO - Wyświetlono dostępne pokoje.
+2025-06-24 14:00:23,908 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-24 14:00:23,909 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-24 14:00:23,910 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-24 14:00:29,017 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-24 14:00:31,673 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania rezerwacjami.
+2025-06-24 14:00:32,618 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-24 14:03:19,460 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-24 14:03:43,452 - hotel_reservation_app - INFO - Pokój 106 jest dostępny w terminie 2025-09-30 do 2025-10-12.
+2025-06-24 14:03:43,453 - hotel_reservation_app - INFO - Znaleziono 3 rabatów spełniających kryteria.
+2025-06-24 14:03:43,469 - hotel_reservation_app - INFO - Zmieniono status pokoju 106 na zajęty
+2025-06-24 14:03:43,470 - hotel_reservation_app - INFO - Dodano zapis pobytu dla gościa: 3
+2025-06-24 14:03:43,470 - hotel_reservation_app - INFO - Utworzono rezerwację RES0007 dla pokoju 106 i gościa 3. Całkowita cena: 14808.00.
+2025-06-24 14:03:45,381 - hotel_reservation_app - INFO - Wyświetlono wszystkie rezerwacje.
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-24 15:21:23,034 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-24 15:21:23,035 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-24 15:21:23,035 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-24 15:21:23,035 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-24 15:21:28,255 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-24 15:21:58,293 - hotel_reservation_app - INFO - Dodano użytkownika: karol z rolą pokojówka.
+2025-06-24 15:21:59,854 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-24 15:22:24,879 - hotel_reservation_app - INFO - Zaktualizowano hasło użytkownika: karol
+2025-06-24 15:22:24,879 - hotel_reservation_app - INFO - Zmieniono rolę użytkownika karol na recepcjonista.
+2025-06-24 15:22:24,891 - hotel_reservation_app - INFO - Zaktualizowano użytkownika: karol z danymi: {'password': 'karol1', 'role': 'recepcjonista'}
+2025-06-24 15:22:28,041 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-24 15:22:59,345 - hotel_reservation_app - INFO - Usunięto użytkownika: karol
+2025-06-24 15:23:01,168 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-25 19:16:15,740 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-25 19:16:20,452 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-25 19:16:22,922 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-25 19:16:23,937 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-25 19:16:23,939 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-25 19:19:19,707 - hotel_reservation_app - INFO - Zmieniono status pokoju 102 na dostępny
+2025-06-25 19:19:20,841 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-25 19:19:20,842 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-25 19:38:10,756 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-26 21:04:20,639 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-26 21:04:20,640 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-26 21:05:48,420 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-26 21:05:49,896 - hotel_reservation_app - INFO - Użytkownik admin wchodzi do menu zarządzania pokojami.
+2025-06-26 21:05:50,495 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-26 21:05:50,496 - hotel_reservation_app - INFO - Wyświetlono wszystkie pokoje.
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - baza została zainicjalizowana
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - RoomService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - GuestService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - HousekeepingService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - DiscountService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - ReservationService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - PaymentService zainicjowany (DB).
+2025-06-27 15:39:20,234 - hotel_reservation_app - INFO - ReportService zainicjowany (DB).
+2025-06-27 15:39:20,235 - hotel_reservation_app - INFO - UserService zainicjowany (DB).
+2025-06-27 15:39:26,073 - hotel_reservation_app - INFO - Użytkownik admin pomyślnie uwierzytelniony jako administrator.
+2025-06-27 15:42:02,983 - hotel_reservation_app - INFO - Wyświetlono wszystkich użytkowników.

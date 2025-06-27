@@ -8,37 +8,42 @@ logger = logging.getLogger('hotel_reservation_app')
 
 class DatabaseManager:
     def __init__(self):
-        self.db = next(get_db())
-        logger.info("DatabaseManager initialized.")
+        self.db = next(get_db()) #uruchamia generator do 1 yield, zwraca bd
+        logger.info("baza została zainicjalizowana")
 
     def __del__(self):
-        if hasattr(self, 'db'):
+        if hasattr(self, 'db'): #sprawdza czy obniekt ma atrybut 'db', tak = zamyka polaczenie z baza
             self.db.close()
 
+#tworzenie zapytan --------------------------------------------
+
+#pobieram wszyskie rekordy z tabeli Room
     def get_all_rooms(self):
         return self.db.query(Room).all()
-
+    
+#fitruje pobieram po numerze konkretny pokoj
     def get_room(self, room_number):
         return self.db.query(Room).filter(Room.number == room_number).first()
 
     def add_room(self, room_data):
-        existing_room = self.get_room(room_data['number'])
+        existing_room = self.get_room(room_data['number']) # czy istnieje
         if existing_room:
             for key, value in room_data.items():
-                setattr(existing_room, key, value)
-            self.db.commit()
+                setattr(existing_room, key, value) #setattr dynamiczne ustawienie atrybutow w pyhonie
+            self.db.commit() #i zapisuje
             return existing_room
+        #tworze nowy obiekt klasy Room
         else:
-            room = Room(**room_data)
+            room = Room(**room_data) #rozpakowuje slownik do arg konstruktora klasy Room i dodaje
             self.db.add(room)
             self.db.commit()
             return room
 
     def update_room(self, room_number, room_data):
-        room = self.get_room(room_number)
+        room = self.get_room(room_number) #sprawdzam czy jest
         if room:
-            for key, value in room_data.items():
-                setattr(room, key, value)
+            for key, value in room_data.items(): #przechodze przez wszyskie k-v 
+                setattr(room, key, value) #setattr dynamiczne ustawienie atrybutow w pyhonie
             self.db.commit()
         return room
 
@@ -134,6 +139,14 @@ class DatabaseManager:
             self.db.commit()
             return invoice
 
+    def update_invoice(self, invoice_id, invoice_data):
+        invoice = self.get_invoice(invoice_id)
+        if invoice:
+            for key, value in invoice_data.items():
+                setattr(invoice, key, value)
+            self.db.commit()
+        return invoice
+
     def get_all_housekeeping_tasks(self):
         return self.db.query(HousekeepingTask).all()
 
@@ -160,6 +173,14 @@ class DatabaseManager:
                 setattr(task, key, value)
             self.db.commit()
         return task
+
+    def delete_housekeeping_task(self, task_id):
+        task = self.get_housekeeping_task(task_id)
+        if task:
+            self.db.delete(task)
+            self.db.commit()
+            return True
+        return False
 
     def get_all_users(self):
         return self.db.query(User).all()
@@ -205,4 +226,28 @@ class DatabaseManager:
             for key, value in discount_data.items():
                 setattr(discount, key, value)
             self.db.commit()
-        return discount 
+        return discount
+
+    def delete_discount(self, discount_id):
+        discount = self.get_discount(discount_id)
+        if discount:
+            self.db.delete(discount)
+            self.db.commit()
+            return True
+        return False
+
+    def delete_user(self, username):
+        user = self.get_user(username)
+        if user:
+            self.db.delete(user)
+            self.db.commit()
+            return True
+        return False
+
+    def update_user(self, username, user_data):
+        user = self.get_user(username)
+        if user:
+            for key, value in user_data.items():
+                setattr(user, key, value)
+            self.db.commit()
+        return user 
